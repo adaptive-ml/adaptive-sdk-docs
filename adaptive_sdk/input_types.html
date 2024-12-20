@@ -31,13 +31,25 @@
             <h2>API Documentation</h2>
                 <ul class="memberlist">
             <li>
-                    <a class="class" href="#ComparisonCompletionDict">ComparisonCompletionDict</a>
+                    <a class="class" href="#ChatMessage">ChatMessage</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="variable" href="#ComparisonCompletionDict.text">text</a>
+                                <a class="variable" href="#ChatMessage.role">role</a>
                         </li>
                         <li>
-                                <a class="variable" href="#ComparisonCompletionDict.model">model</a>
+                                <a class="variable" href="#ChatMessage.content">content</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ComparisonCompletion">ComparisonCompletion</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ComparisonCompletion.text">text</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ComparisonCompletion.model">model</a>
                         </li>
                 </ul>
 
@@ -216,36 +228,71 @@
                 
                 
             </section>
-                <section id="ComparisonCompletionDict">
+                <section id="ChatMessage">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">ComparisonCompletionDict</span><wbr>(<span class="base">typing.TypedDict</span>):
+    <span class="name">ChatMessage</span><wbr>(<span class="base">typing.TypedDict</span>):
 
         
     </div>
-    <a class="headerlink" href="#ComparisonCompletionDict"></a>
+    <a class="headerlink" href="#ChatMessage"></a>
     
     
 
-                            <div id="ComparisonCompletionDict.text" class="classattr">
+                            <div id="ChatMessage.role" class="classattr">
+                                <div class="attr variable">
+            <span class="name">role</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;system&#39;, &#39;user&#39;, &#39;assistant&#39;]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ChatMessage.role"></a>
+    
+    
+
+                            </div>
+                            <div id="ChatMessage.content" class="classattr">
+                                <div class="attr variable">
+            <span class="name">content</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ChatMessage.content"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="ComparisonCompletion">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ComparisonCompletion</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ComparisonCompletion"></a>
+    
+    
+
+                            <div id="ComparisonCompletion.text" class="classattr">
                                 <div class="attr variable">
             <span class="name">text</span><span class="annotation">: typing_extensions.Required[str]</span>
 
         
     </div>
-    <a class="headerlink" href="#ComparisonCompletionDict.text"></a>
+    <a class="headerlink" href="#ComparisonCompletion.text"></a>
     
     
 
                             </div>
-                            <div id="ComparisonCompletionDict.model" class="classattr">
+                            <div id="ComparisonCompletion.model" class="classattr">
                                 <div class="attr variable">
             <span class="name">model</span><span class="annotation">: typing_extensions.Required[str]</span>
 
         
     </div>
-    <a class="headerlink" href="#ComparisonCompletionDict.model"></a>
+    <a class="headerlink" href="#ComparisonCompletion.model"></a>
     
     
 
