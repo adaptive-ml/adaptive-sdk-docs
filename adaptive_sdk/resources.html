@@ -268,7 +268,7 @@
                                 <a class="function" href="#Training.__init__">Training</a>
                         </li>
                         <li>
-                                <a class="function" href="#Training.jobs">jobs</a>
+                                <a class="variable" href="#Training.jobs">jobs</a>
                         </li>
                 </ul>
 
@@ -277,7 +277,10 @@
                     <a class="class" href="#TrainingAdmin">TrainingAdmin</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#TrainingAdmin.jobs">jobs</a>
+                                <a class="function" href="#TrainingAdmin.__init__">TrainingAdmin</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingAdmin.jobs">jobs</a>
                         </li>
                 </ul>
 
@@ -583,7 +586,7 @@
                                 <a class="function" href="#AsyncTraining.__init__">AsyncTraining</a>
                         </li>
                         <li>
-                                <a class="function" href="#AsyncTraining.jobs">jobs</a>
+                                <a class="variable" href="#AsyncTraining.jobs">jobs</a>
                         </li>
                 </ul>
 
@@ -592,7 +595,10 @@
                     <a class="class" href="#AsyncTrainingAdmin">AsyncTrainingAdmin</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="function" href="#AsyncTrainingAdmin.jobs">jobs</a>
+                                <a class="function" href="#AsyncTrainingAdmin.__init__">AsyncTrainingAdmin</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AsyncTrainingAdmin.jobs">jobs</a>
                         </li>
                 </ul>
 
@@ -919,7 +925,9 @@ for chunk in stream_response:
     </div>
     <a class="headerlink" href="#Datasets"></a>
     
-    
+            <div class="docstring"><p>Resource to interact with file datasets.</p>
+</div>
+
 
                             <div id="Datasets.__init__" class="classattr">
                                 <div class="attr function">
@@ -943,7 +951,22 @@ for chunk in stream_response:
     </div>
     <a class="headerlink" href="#Datasets.upload"></a>
     
-    
+            <div class="docstring"><p>Upload a dataset from a file. File must be jsonl, where each line should match structure in example below.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>file_path:</strong>  Path to jsonl file.</li>
+<li><strong>dataset_key:</strong>  New dataset key.</li>
+<li><strong>name:</strong>  Optional name to render in UI; if <code>None</code>, defaults to same as <code>dataset_key</code>.</li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>{"messages": [{"role": "system", "content": "&lt;optional system prompt&gt;"}, {"role": "user", "content": "&lt;user content&gt;"}, {"role": "assistant", "content": "&lt;assistant answer&gt;"}], "completion": "hey"}
+</code></pre>
+</div>
+
 
                             </div>
                             <div id="Datasets.list" class="classattr">
@@ -956,7 +979,9 @@ for chunk in stream_response:
     </div>
     <a class="headerlink" href="#Datasets.list"></a>
     
-    
+            <div class="docstring"><p>List previously uploaded datasets.</p>
+</div>
+
 
                             </div>
                             <div id="Datasets.get" class="classattr">
@@ -969,7 +994,15 @@ for chunk in stream_response:
     </div>
     <a class="headerlink" href="#Datasets.get"></a>
     
-    
+            <div class="docstring"><p>Get details for dataset.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>key:</strong>  Dataset key.</li>
+</ul>
+</div>
+
 
                             </div>
                 </section>
@@ -1035,7 +1068,9 @@ Request will error if default model is not an embedding model.</li>
     </div>
     <a class="headerlink" href="#EvalJobs"></a>
     
-    
+            <div class="docstring"><p>Resource to interact with evaluation jobs.</p>
+</div>
+
 
                             <div id="EvalJobs.__init__" class="classattr">
                                 <div class="attr function">
@@ -1059,7 +1094,18 @@ Request will error if default model is not an embedding model.</li>
     </div>
     <a class="headerlink" href="#EvalJobs.create"></a>
     
-    
+            <div class="docstring"><p>Create a new evaluation job.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>dataset_key:</strong>  Input dataset key.</li>
+<li><strong>models:</strong>  Models to evaluate.</li>
+<li><strong>judge_model:</strong>  Model key of judge.</li>
+<li><strong>name:</strong>  Optional name for evaluation job.</li>
+</ul>
+</div>
+
 
                             </div>
                             <div id="EvalJobs.list" class="classattr">
@@ -1830,10 +1876,8 @@ for the model to be terminated.</li>
 
                             </div>
                             <div id="Training.jobs" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">jobs</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#TrainingJobs">TrainingJobs</a></span>:</span></span>
+                                <div class="attr variable">
+            <span class="name">jobs</span>
 
         
     </div>
@@ -1855,11 +1899,21 @@ for the model to be terminated.</li>
     
     
 
-                            <div id="TrainingAdmin.jobs" class="classattr">
+                            <div id="TrainingAdmin.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="def">def</span>
-        <span class="name">jobs</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#TrainingJobsAdmin">TrainingJobsAdmin</a></span>:</span></span>
+        <span class="name">TrainingAdmin</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">base_client</span><span class="o">.</span><span class="n">BaseSyncClient</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingAdmin.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingAdmin.jobs" class="classattr">
+                                <div class="attr variable">
+            <span class="name">jobs</span>
 
         
     </div>
@@ -1879,7 +1933,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobs"></a>
     
-    
+            <div class="docstring"><p>Resource to interact with training jobs.</p>
+</div>
+
 
                             <div id="TrainingJobs.__init__" class="classattr">
                                 <div class="attr function">
@@ -1897,13 +1953,23 @@ for the model to be terminated.</li>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="nb">dict</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></span><span class="return-annotation">) -> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">graphql_client</span><span class="o">.</span><span class="n">create_training_job</span><span class="o">.</span><span class="n">CreateTrainingJobCreateTrainingJob</span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="n"><a href="input_types.html#AdaptRequestConfigInput">adaptive_sdk.input_types.AdaptRequestConfigInput</a></span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></span><span class="return-annotation">) -> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">graphql_client</span><span class="o">.</span><span class="n">create_training_job</span><span class="o">.</span><span class="n">CreateTrainingJobCreateTrainingJob</span>:</span></span>
 
         
     </div>
     <a class="headerlink" href="#TrainingJobs.create"></a>
     
-    
+            <div class="docstring"><p>Create a new training job.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>model:</strong>  Model to train.</li>
+<li><strong>config:</strong>  Training config.</li>
+<li><strong>name:</strong>  Name for training job.</li>
+</ul>
+</div>
+
 
                             </div>
                             <div id="TrainingJobs.cancel" class="classattr">
@@ -1916,7 +1982,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobs.cancel"></a>
     
-    
+            <div class="docstring"><p>Cancel ongoing training job.</p>
+</div>
+
 
                             </div>
                             <div id="TrainingJobs.list" class="classattr">
@@ -1929,7 +1997,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobs.list"></a>
     
-    
+            <div class="docstring"><p>List all training jobs.</p>
+</div>
+
 
                             </div>
                             <div id="TrainingJobs.get" class="classattr">
@@ -1942,7 +2012,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobs.get"></a>
     
-    
+            <div class="docstring"><p>Get details for training job.</p>
+</div>
+
 
                             </div>
                 </section>
@@ -1956,7 +2028,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobsAdmin"></a>
     
-    
+            <div class="docstring"><p>Resource to administrate training jobs.</p>
+</div>
+
 
                             <div id="TrainingJobsAdmin.cancel" class="classattr">
                                 <div class="attr function">
@@ -1968,7 +2042,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobsAdmin.cancel"></a>
     
-    
+            <div class="docstring"><p>Cancel ongoing training job.</p>
+</div>
+
 
                             </div>
                             <div id="TrainingJobsAdmin.list" class="classattr">
@@ -1981,7 +2057,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobsAdmin.list"></a>
     
-    
+            <div class="docstring"><p>List all training jobs.</p>
+</div>
+
 
                             </div>
                             <div id="TrainingJobsAdmin.get" class="classattr">
@@ -1994,7 +2072,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#TrainingJobsAdmin.get"></a>
     
-    
+            <div class="docstring"><p>Get details for training job.</p>
+</div>
+
 
                             </div>
                 </section>
@@ -2378,7 +2458,22 @@ async def async_chat_stream():
     </div>
     <a class="headerlink" href="#AsyncDatasets.upload"></a>
     
-    
+            <div class="docstring"><p>Upload a dataset from a file. File must be jsonl, where each line should match structure in example below.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>file_path:</strong>  Path to jsonl file.</li>
+<li><strong>dataset_key:</strong>  New dataset key.</li>
+<li><strong>name:</strong>  Optional name to render in UI; if <code>None</code>, defaults to same as <code>dataset_key</code>.</li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>{"messages": [{"role": "system", "content": "&lt;optional system prompt&gt;"}, {"role": "user", "content": "&lt;user content&gt;"}, {"role": "assistant", "content": "&lt;assistant answer&gt;"}], "completion": "hey"}
+</code></pre>
+</div>
+
 
                             </div>
                             <div id="AsyncDatasets.list" class="classattr">
@@ -2391,7 +2486,9 @@ async def async_chat_stream():
     </div>
     <a class="headerlink" href="#AsyncDatasets.list"></a>
     
-    
+            <div class="docstring"><p>List previously uploaded datasets.</p>
+</div>
+
 
                             </div>
                             <div id="AsyncDatasets.get" class="classattr">
@@ -2404,7 +2501,15 @@ async def async_chat_stream():
     </div>
     <a class="headerlink" href="#AsyncDatasets.get"></a>
     
-    
+            <div class="docstring"><p>Get details for dataset.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>key:</strong>  Dataset key.</li>
+</ul>
+</div>
+
 
                             </div>
                 </section>
@@ -2494,7 +2599,18 @@ Request will error if default model is not an embedding model.</li>
     </div>
     <a class="headerlink" href="#AsyncEvalJobs.create"></a>
     
-    
+            <div class="docstring"><p>Create a new evaluation job.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>dataset_key:</strong>  Input dataset key.</li>
+<li><strong>models:</strong>  Models to evaluate.</li>
+<li><strong>judge_model:</strong>  Model key of judge.</li>
+<li><strong>name:</strong>  Optional name for evaluation job.</li>
+</ul>
+</div>
+
 
                             </div>
                             <div id="AsyncEvalJobs.list" class="classattr">
@@ -3263,10 +3379,8 @@ for the model to be terminated.</li>
 
                             </div>
                             <div id="AsyncTraining.jobs" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">jobs</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#AsyncTrainingJobs">AsyncTrainingJobs</a></span>:</span></span>
+                                <div class="attr variable">
+            <span class="name">jobs</span>
 
         
     </div>
@@ -3288,11 +3402,21 @@ for the model to be terminated.</li>
     
     
 
-                            <div id="AsyncTrainingAdmin.jobs" class="classattr">
+                            <div id="AsyncTrainingAdmin.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="def">def</span>
-        <span class="name">jobs</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#AsyncTrainingJobsAdmin">AsyncTrainingJobsAdmin</a></span>:</span></span>
+        <span class="name">AsyncTrainingAdmin</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">base_client</span><span class="o">.</span><span class="n">BaseAsyncClient</span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncTrainingAdmin.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncTrainingAdmin.jobs" class="classattr">
+                                <div class="attr variable">
+            <span class="name">jobs</span>
 
         
     </div>
@@ -3312,7 +3436,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobs"></a>
     
-    
+            <div class="docstring"><p>Resource to interact with training jobs.</p>
+</div>
+
 
                             <div id="AsyncTrainingJobs.__init__" class="classattr">
                                 <div class="attr function">
@@ -3330,13 +3456,23 @@ for the model to be terminated.</li>
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="nb">dict</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></span><span class="return-annotation">) -> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">graphql_client</span><span class="o">.</span><span class="n">create_training_job</span><span class="o">.</span><span class="n">CreateTrainingJobCreateTrainingJob</span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="n"><a href="input_types.html#AdaptRequestConfigInput">adaptive_sdk.input_types.AdaptRequestConfigInput</a></span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></span><span class="return-annotation">) -> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">graphql_client</span><span class="o">.</span><span class="n">create_training_job</span><span class="o">.</span><span class="n">CreateTrainingJobCreateTrainingJob</span>:</span></span>
 
         
     </div>
     <a class="headerlink" href="#AsyncTrainingJobs.create"></a>
     
-    
+            <div class="docstring"><p>Create a new training job.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>model:</strong>  Model to train.</li>
+<li><strong>config:</strong>  Training config.</li>
+<li><strong>name:</strong>  Name for training job.</li>
+</ul>
+</div>
+
 
                             </div>
                             <div id="AsyncTrainingJobs.cancel" class="classattr">
@@ -3349,7 +3485,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobs.cancel"></a>
     
-    
+            <div class="docstring"><p>Cancel ongoing training job.</p>
+</div>
+
 
                             </div>
                             <div id="AsyncTrainingJobs.list" class="classattr">
@@ -3362,7 +3500,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobs.list"></a>
     
-    
+            <div class="docstring"><p>List all training jobs.</p>
+</div>
+
 
                             </div>
                             <div id="AsyncTrainingJobs.get" class="classattr">
@@ -3375,7 +3515,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobs.get"></a>
     
-    
+            <div class="docstring"><p>Get details for training job.</p>
+</div>
+
 
                             </div>
                 </section>
@@ -3389,7 +3531,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobsAdmin"></a>
     
-    
+            <div class="docstring"><p>Resource to administrate training jobs.</p>
+</div>
+
 
                             <div id="AsyncTrainingJobsAdmin.cancel" class="classattr">
                                 <div class="attr function">
@@ -3401,7 +3545,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobsAdmin.cancel"></a>
     
-    
+            <div class="docstring"><p>Cancel ongoing training job.</p>
+</div>
+
 
                             </div>
                             <div id="AsyncTrainingJobsAdmin.list" class="classattr">
@@ -3414,7 +3560,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobsAdmin.list"></a>
     
-    
+            <div class="docstring"><p>List all training jobs.</p>
+</div>
+
 
                             </div>
                             <div id="AsyncTrainingJobsAdmin.get" class="classattr">
@@ -3427,7 +3575,9 @@ for the model to be terminated.</li>
     </div>
     <a class="headerlink" href="#AsyncTrainingJobsAdmin.get"></a>
     
-    
+            <div class="docstring"><p>Get details for training job.</p>
+</div>
+
 
                             </div>
                 </section>

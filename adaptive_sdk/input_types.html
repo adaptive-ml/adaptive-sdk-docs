@@ -31,6 +31,39 @@
             <h2>API Documentation</h2>
                 <ul class="memberlist">
             <li>
+                    <a class="class" href="#AdaptRequestConfigInput">AdaptRequestConfigInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#AdaptRequestConfigInput.output_name">output_name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AdaptRequestConfigInput.training_config">training_config</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AdaptRequestConfigInput.sample_config">sample_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#BaseTrainingParamsInput">BaseTrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#BaseTrainingParamsInput.learning_rate">learning_rate</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#BaseTrainingParamsInput.num_epochs">num_epochs</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#BaseTrainingParamsInput.batch_size">batch_size</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#BaseTrainingParamsInput.num_validations">num_validations</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#ChatMessage">ChatMessage</a>
                             <ul class="memberlist">
                         <li>
@@ -130,6 +163,27 @@
 
             </li>
             <li>
+                    <a class="class" href="#DpotrainingParamsInput">DpotrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#DpotrainingParamsInput.kl_div_coeff">kl_div_coeff</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#GuidelinesTrainingParamsInput">GuidelinesTrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#GuidelinesTrainingParamsInput.judge_model">judge_model</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GuidelinesTrainingParamsInput.judge_model_prompt">judge_model_prompt</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#ListCompletionsFilterInput">ListCompletionsFilterInput</a>
                             <ul class="memberlist">
                         <li>
@@ -184,6 +238,63 @@
 
             </li>
             <li>
+                    <a class="class" href="#MetricTrainingParamsInput">MetricTrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#MetricTrainingParamsInput.metric_key">metric_key</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#MetricTrainingParamsInput.metric_metadata">metric_metadata</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#MetricTrainingParamsMetadata">MetricTrainingParamsMetadata</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#MetricTrainingParamsMetadata.scalar_metric">scalar_metric</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PpotrainingParamsInput">PpotrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#PpotrainingParamsInput.kl_div_coeff">kl_div_coeff</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SampleConfigInput">SampleConfigInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#SampleConfigInput.feedback_type">feedback_type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SampleConfigInput.selection_type">selection_type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SampleConfigInput.max_samples">max_samples</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SampleConfigInput.filter">filter</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ScalarMetricConfigInput">ScalarMetricConfigInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ScalarMetricConfigInput.threshold">threshold</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#TimeRange">TimeRange</a>
                             <ul class="memberlist">
                         <li>
@@ -191,6 +302,60 @@
                         </li>
                         <li>
                                 <a class="variable" href="#TimeRange.to">to</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingConfigInput">TrainingConfigInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingConfigInput.base_training_params">base_training_params</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingConfigInput.training_metadata">training_metadata</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingConfigInput.training_objective">training_objective</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingMetadataInput">TrainingMetadataInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInput.training_type">training_type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInput.alignment_method">alignment_method</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInput.parameters">parameters</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingMetadataInputParameters">TrainingMetadataInputParameters</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInputParameters.dpo">dpo</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInputParameters.ppo">ppo</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingObjectiveInput">TrainingObjectiveInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingObjectiveInput.metric">metric</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingObjectiveInput.guidelines">guidelines</a>
                         </li>
                 </ul>
 
@@ -228,6 +393,109 @@
                 
                 
             </section>
+                <section id="AdaptRequestConfigInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">AdaptRequestConfigInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#AdaptRequestConfigInput"></a>
+    
+    
+
+                            <div id="AdaptRequestConfigInput.output_name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">output_name</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AdaptRequestConfigInput.output_name"></a>
+    
+    
+
+                            </div>
+                            <div id="AdaptRequestConfigInput.training_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">training_config</span><span class="annotation">: typing_extensions.Required[<a href="#TrainingConfigInput">TrainingConfigInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AdaptRequestConfigInput.training_config"></a>
+    
+    
+
+                            </div>
+                            <div id="AdaptRequestConfigInput.sample_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">sample_config</span><span class="annotation">: typing_extensions.NotRequired[<a href="#SampleConfigInput">SampleConfigInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AdaptRequestConfigInput.sample_config"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="BaseTrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">BaseTrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#BaseTrainingParamsInput"></a>
+    
+    
+
+                            <div id="BaseTrainingParamsInput.learning_rate" class="classattr">
+                                <div class="attr variable">
+            <span class="name">learning_rate</span><span class="annotation">: typing_extensions.Required[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#BaseTrainingParamsInput.learning_rate"></a>
+    
+    
+
+                            </div>
+                            <div id="BaseTrainingParamsInput.num_epochs" class="classattr">
+                                <div class="attr variable">
+            <span class="name">num_epochs</span><span class="annotation">: typing_extensions.Required[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#BaseTrainingParamsInput.num_epochs"></a>
+    
+    
+
+                            </div>
+                            <div id="BaseTrainingParamsInput.batch_size" class="classattr">
+                                <div class="attr variable">
+            <span class="name">batch_size</span><span class="annotation">: typing_extensions.Required[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#BaseTrainingParamsInput.batch_size"></a>
+    
+    
+
+                            </div>
+                            <div id="BaseTrainingParamsInput.num_validations" class="classattr">
+                                <div class="attr variable">
+            <span class="name">num_validations</span><span class="annotation">: typing_extensions.Required[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#BaseTrainingParamsInput.num_validations"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="ChatMessage">
                     <div class="attr class">
             
@@ -574,6 +842,65 @@
 
                             </div>
                 </section>
+                <section id="DpotrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">DpotrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#DpotrainingParamsInput"></a>
+    
+    
+
+                            <div id="DpotrainingParamsInput.kl_div_coeff" class="classattr">
+                                <div class="attr variable">
+            <span class="name">kl_div_coeff</span><span class="annotation">: typing_extensions.Required[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#DpotrainingParamsInput.kl_div_coeff"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="GuidelinesTrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">GuidelinesTrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelinesTrainingParamsInput"></a>
+    
+    
+
+                            <div id="GuidelinesTrainingParamsInput.judge_model" class="classattr">
+                                <div class="attr variable">
+            <span class="name">judge_model</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelinesTrainingParamsInput.judge_model"></a>
+    
+    
+
+                            </div>
+                            <div id="GuidelinesTrainingParamsInput.judge_model_prompt" class="classattr">
+                                <div class="attr variable">
+            <span class="name">judge_model_prompt</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelinesTrainingParamsInput.judge_model_prompt"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="ListCompletionsFilterInput">
                     <div class="attr class">
             
@@ -779,6 +1106,170 @@
 
                             </div>
                 </section>
+                <section id="MetricTrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">MetricTrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#MetricTrainingParamsInput"></a>
+    
+    
+
+                            <div id="MetricTrainingParamsInput.metric_key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metric_key</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MetricTrainingParamsInput.metric_key"></a>
+    
+    
+
+                            </div>
+                            <div id="MetricTrainingParamsInput.metric_metadata" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metric_metadata</span><span class="annotation">: typing_extensions.NotRequired[<a href="#MetricTrainingParamsMetadata">MetricTrainingParamsMetadata</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MetricTrainingParamsInput.metric_metadata"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="MetricTrainingParamsMetadata">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">MetricTrainingParamsMetadata</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#MetricTrainingParamsMetadata"></a>
+    
+    
+
+                            <div id="MetricTrainingParamsMetadata.scalar_metric" class="classattr">
+                                <div class="attr variable">
+            <span class="name">scalar_metric</span><span class="annotation">: typing_extensions.NotRequired[<a href="#ScalarMetricConfigInput">ScalarMetricConfigInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#MetricTrainingParamsMetadata.scalar_metric"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="PpotrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PpotrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PpotrainingParamsInput"></a>
+    
+    
+
+                            <div id="PpotrainingParamsInput.kl_div_coeff" class="classattr">
+                                <div class="attr variable">
+            <span class="name">kl_div_coeff</span><span class="annotation">: typing_extensions.Required[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PpotrainingParamsInput.kl_div_coeff"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="SampleConfigInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">SampleConfigInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput"></a>
+    
+    
+
+                            <div id="SampleConfigInput.feedback_type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">feedback_type</span><span class="annotation">: typing_extensions.NotRequired[typing.Literal[&#39;DIRECT&#39;, &#39;PREFERENCE&#39;]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput.feedback_type"></a>
+    
+    
+
+                            </div>
+                            <div id="SampleConfigInput.selection_type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">selection_type</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;ALL&#39;, &#39;RANDOM&#39;, &#39;LAST&#39;]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput.selection_type"></a>
+    
+    
+
+                            </div>
+                            <div id="SampleConfigInput.max_samples" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_samples</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput.max_samples"></a>
+    
+    
+
+                            </div>
+                            <div id="SampleConfigInput.filter" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filter</span><span class="annotation">: typing_extensions.NotRequired[<a href="#ListCompletionsFilterInput">ListCompletionsFilterInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput.filter"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="ScalarMetricConfigInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ScalarMetricConfigInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ScalarMetricConfigInput"></a>
+    
+    
+
+                            <div id="ScalarMetricConfigInput.threshold" class="classattr">
+                                <div class="attr variable">
+            <span class="name">threshold</span><span class="annotation">: typing_extensions.NotRequired[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ScalarMetricConfigInput.threshold"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="TimeRange">
                     <div class="attr class">
             
@@ -818,6 +1309,168 @@
         
     </div>
     <a class="headerlink" href="#TimeRange.to"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="TrainingConfigInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingConfigInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigInput"></a>
+    
+    
+
+                            <div id="TrainingConfigInput.base_training_params" class="classattr">
+                                <div class="attr variable">
+            <span class="name">base_training_params</span><span class="annotation">: typing_extensions.NotRequired[<a href="#BaseTrainingParamsInput">BaseTrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigInput.base_training_params"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingConfigInput.training_metadata" class="classattr">
+                                <div class="attr variable">
+            <span class="name">training_metadata</span><span class="annotation">: typing_extensions.NotRequired[<a href="#TrainingMetadataInput">TrainingMetadataInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigInput.training_metadata"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingConfigInput.training_objective" class="classattr">
+                                <div class="attr variable">
+            <span class="name">training_objective</span><span class="annotation">: typing_extensions.Required[<a href="#TrainingObjectiveInput">TrainingObjectiveInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigInput.training_objective"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="TrainingMetadataInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingMetadataInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInput"></a>
+    
+    
+
+                            <div id="TrainingMetadataInput.training_type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">training_type</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PARAMETER_EFFICIENT&#39;, &#39;FULL_WEIGHTS&#39;]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInput.training_type"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingMetadataInput.alignment_method" class="classattr">
+                                <div class="attr variable">
+            <span class="name">alignment_method</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PPO&#39;, &#39;DPO&#39;]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInput.alignment_method"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingMetadataInput.parameters" class="classattr">
+                                <div class="attr variable">
+            <span class="name">parameters</span><span class="annotation">: typing_extensions.NotRequired[<a href="#TrainingMetadataInputParameters">TrainingMetadataInputParameters</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInput.parameters"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="TrainingMetadataInputParameters">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingMetadataInputParameters</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInputParameters"></a>
+    
+    
+
+                            <div id="TrainingMetadataInputParameters.dpo" class="classattr">
+                                <div class="attr variable">
+            <span class="name">dpo</span><span class="annotation">: typing_extensions.NotRequired[<a href="#DpotrainingParamsInput">DpotrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInputParameters.dpo"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingMetadataInputParameters.ppo" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ppo</span><span class="annotation">: typing_extensions.NotRequired[<a href="#PpotrainingParamsInput">PpotrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInputParameters.ppo"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="TrainingObjectiveInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingObjectiveInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingObjectiveInput"></a>
+    
+    
+
+                            <div id="TrainingObjectiveInput.metric" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metric</span><span class="annotation">: typing_extensions.NotRequired[<a href="#MetricTrainingParamsInput">MetricTrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingObjectiveInput.metric"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingObjectiveInput.guidelines" class="classattr">
+                                <div class="attr variable">
+            <span class="name">guidelines</span><span class="annotation">: typing_extensions.NotRequired[<a href="#GuidelinesTrainingParamsInput">GuidelinesTrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingObjectiveInput.guidelines"></a>
     
     
 
