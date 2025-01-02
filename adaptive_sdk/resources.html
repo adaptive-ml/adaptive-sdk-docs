@@ -244,6 +244,9 @@
                     <a class="class" href="#ModelsAdmin">ModelsAdmin</a>
                             <ul class="memberlist">
                         <li>
+                                <a class="function" href="#ModelsAdmin.add_hf_model">add_hf_model</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#ModelsAdmin.add_external">add_external</a>
                         </li>
                         <li>
@@ -562,6 +565,9 @@
                     <a class="class" href="#AsyncModelsAdmin">AsyncModelsAdmin</a>
                             <ul class="memberlist">
                         <li>
+                                <a class="function" href="#AsyncModelsAdmin.add_hf_model">add_hf_model</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#AsyncModelsAdmin.add_external">add_external</a>
                         </li>
                         <li>
@@ -846,6 +852,7 @@
 <ul>
 <li><strong>messages:</strong>  Input messages, each dict with keys <code>role</code> and <code>content</code>.</li>
 <li><strong>stream:</strong>  If <code>True</code>, partial message deltas will be returned. If stream is over, chunk.choices will be None.</li>
+<li><strong>model:</strong>  Target model key for inference. If <code>None</code>, the requests will be routed to the use case's default model.</li>
 <li><strong>stop:</strong>  Sequences or where the API will stop generating further tokens.</li>
 <li><strong>max_tokens:</strong>  Maximum # of tokens allowed to generate.</li>
 <li><strong>temperature:</strong>  Sampling temperature.</li>
@@ -1745,6 +1752,30 @@ If <code>None</code>, no changes are applied.</li>
 </div>
 
 
+                            <div id="ModelsAdmin.add_hf_model" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">add_hf_model</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">hf_model_id</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;google/gemma-2-2b&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelsAdmin.add_hf_model"></a>
+    
+            <div class="docstring"><p>Add model from the HuggingFace Model hub to Adaptive model registry.
+It will take several minutes for the model to be downloaded and converted to Adaptive format.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>hf_model_id:</strong>  The ID of the selected model repo on HuggingFace Model Hub.</li>
+<li><strong>output_model_key:</strong>  The key that will identify the new model in Adaptive.</li>
+<li><strong>hf_token:</strong>  Your HuggingFace Token, needed to validate access to gated/restricted model.</li>
+</ul>
+</div>
+
+
+                            </div>
                             <div id="ModelsAdmin.add_external" class="classattr">
                                 <div class="attr function">
             
@@ -2354,6 +2385,7 @@ If not set, will be the same as <code>key</code>.</li>
 <ul>
 <li><strong>messages:</strong>  Input messages, each dict with keys <code>role</code> and <code>content</code>.</li>
 <li><strong>stream:</strong>  If <code>True</code>, partial message deltas will be returned.</li>
+<li><strong>model:</strong>  Target model key for inference. If <code>None</code>, the requests will be routed to the use case's default model.</li>
 <li><strong>stop:</strong>  Sequences or where the API will stop generating further tokens.</li>
 <li><strong>max_tokens:</strong>  Maximum # of tokens allowed to generate.</li>
 <li><strong>temperature:</strong>  Sampling temperature.</li>
@@ -3248,6 +3280,30 @@ If <code>None</code>, no changes are applied.</li>
 </div>
 
 
+                            <div id="AsyncModelsAdmin.add_hf_model" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">add_hf_model</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">hf_model_id</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncModelsAdmin.add_hf_model"></a>
+    
+            <div class="docstring"><p>Add model from the HuggingFace Model hub to Adaptive model registry.
+It will take several minutes for the model to be downloaded and converted to Adaptive format.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>hf_model_id:</strong>  The ID of the selected model repo on HuggingFace Model Hub.</li>
+<li><strong>output_model_key:</strong>  The key that will identify the new model in Adaptive.</li>
+<li><strong>hf_token:</strong>  Your HuggingFace Token, needed to validate access to gated/restricted model.</li>
+</ul>
+</div>
+
+
+                            </div>
                             <div id="AsyncModelsAdmin.add_external" class="classattr">
                                 <div class="attr function">
             
