@@ -69,7 +69,13 @@
                                 <a class="variable" href="#Adaptive.training">training</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Adaptive.use_case">use_case</a>
+                                <a class="variable" href="#Adaptive.use_cases">use_cases</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Adaptive.default_use_case">default_use_case</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Adaptive.set_default_use_case">set_default_use_case</a>
                         </li>
                 </ul>
 
@@ -111,61 +117,13 @@
                                 <a class="variable" href="#AsyncAdaptive.training">training</a>
                         </li>
                         <li>
-                                <a class="variable" href="#AsyncAdaptive.use_case">use_case</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#AdaptiveAdmin">AdaptiveAdmin</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#AdaptiveAdmin.__init__">AdaptiveAdmin</a>
+                                <a class="variable" href="#AsyncAdaptive.use_cases">use_cases</a>
                         </li>
                         <li>
-                                <a class="variable" href="#AdaptiveAdmin.evaluation">evaluation</a>
+                                <a class="variable" href="#AsyncAdaptive.default_use_case">default_use_case</a>
                         </li>
                         <li>
-                                <a class="variable" href="#AdaptiveAdmin.feedback">feedback</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AdaptiveAdmin.models">models</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AdaptiveAdmin.training">training</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AdaptiveAdmin.use_cases">use_cases</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#AdaptiveAdmin.with_use_case">with_use_case</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
-                    <a class="class" href="#AsyncAdaptiveAdmin">AsyncAdaptiveAdmin</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#AsyncAdaptiveAdmin.__init__">AsyncAdaptiveAdmin</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AsyncAdaptiveAdmin.evaluation">evaluation</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AsyncAdaptiveAdmin.feedback">feedback</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AsyncAdaptiveAdmin.models">models</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AsyncAdaptiveAdmin.training">training</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#AsyncAdaptiveAdmin.use_cases">use_cases</a>
-                        </li>
-                        <li>
-                                <a class="function" href="#AsyncAdaptiveAdmin.with_use_case">with_use_case</a>
+                                <a class="function" href="#AsyncAdaptive.set_default_use_case">set_default_use_case</a>
                         </li>
                 </ul>
 
@@ -195,18 +153,21 @@ adaptive_sdk    </h1>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Adaptive</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseSyncClient</span>):
+    <span class="name">Adaptive</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseSyncClient</span>, <span class="base">adaptive_sdk.base_client.UseCaseClient</span>):
 
         
     </div>
     <a class="headerlink" href="#Adaptive"></a>
     
-    
+            <div class="docstring"><p>Helper class that provides a standard way to create an ABC using
+inheritance.</p>
+</div>
+
 
                             <div id="Adaptive.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">Adaptive</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
+        <span class="name">Adaptive</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
 
         
     </div>
@@ -336,15 +297,43 @@ Defaults to None, in which use environment variable <code>ADAPTIVE_KEY</code> ne
     
 
                             </div>
-                            <div id="Adaptive.use_case" class="classattr">
+                            <div id="Adaptive.use_cases" class="classattr">
                                 <div class="attr variable">
-            <span class="name">use_case</span><span class="annotation">: <a href="adaptive_sdk/resources.html#UseCase">adaptive_sdk.resources.UseCase</a></span>
+            <span class="name">use_cases</span><span class="annotation">: <a href="adaptive_sdk/resources.html#UseCase">adaptive_sdk.resources.UseCase</a></span>
 
         
     </div>
-    <a class="headerlink" href="#Adaptive.use_case"></a>
+    <a class="headerlink" href="#Adaptive.use_cases"></a>
     
     
+
+                            </div>
+                            <div id="Adaptive.default_use_case" class="classattr">
+                                <div class="attr variable">
+            <span class="name">default_use_case</span><span class="annotation">: str | None</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Adaptive.default_use_case"></a>
+    
+            <div class="docstring"><p>Get the current default use case key.</p>
+</div>
+
+
+                            </div>
+                            <div id="Adaptive.set_default_use_case" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">set_default_use_case</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Adaptive.set_default_use_case"></a>
+    
+            <div class="docstring"><p>Set a default use case key to be used for use case-specific operations.</p>
+</div>
+
 
                             </div>
                 </section>
@@ -352,18 +341,21 @@ Defaults to None, in which use environment variable <code>ADAPTIVE_KEY</code> ne
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">AsyncAdaptive</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseAsyncClient</span>):
+    <span class="name">AsyncAdaptive</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseAsyncClient</span>, <span class="base">adaptive_sdk.base_client.UseCaseClient</span>):
 
         
     </div>
     <a class="headerlink" href="#AsyncAdaptive"></a>
     
-    
+            <div class="docstring"><p>Helper class that provides a standard way to create an ABC using
+inheritance.</p>
+</div>
+
 
                             <div id="AsyncAdaptive.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">AsyncAdaptive</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
+        <span class="name">AsyncAdaptive</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
 
         
     </div>
@@ -493,235 +485,41 @@ Defaults to None, in which use environment variable <code>ADAPTIVE_KEY</code> ne
     
 
                             </div>
-                            <div id="AsyncAdaptive.use_case" class="classattr">
+                            <div id="AsyncAdaptive.use_cases" class="classattr">
                                 <div class="attr variable">
-            <span class="name">use_case</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncUseCase">adaptive_sdk.resources.AsyncUseCase</a></span>
+            <span class="name">use_cases</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncUseCase">adaptive_sdk.resources.AsyncUseCase</a></span>
 
         
     </div>
-    <a class="headerlink" href="#AsyncAdaptive.use_case"></a>
+    <a class="headerlink" href="#AsyncAdaptive.use_cases"></a>
     
     
 
                             </div>
-                </section>
-                <section id="AdaptiveAdmin">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">AdaptiveAdmin</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseSyncClient</span>):
+                            <div id="AsyncAdaptive.default_use_case" class="classattr">
+                                <div class="attr variable">
+            <span class="name">default_use_case</span><span class="annotation">: str | None</span>
 
         
     </div>
-    <a class="headerlink" href="#AdaptiveAdmin"></a>
+    <a class="headerlink" href="#AsyncAdaptive.default_use_case"></a>
     
-    
-
-                            <div id="AdaptiveAdmin.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">AdaptiveAdmin</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.__init__"></a>
-    
-            <div class="docstring"><p>Instantiates a new synchronous AdaptiveAdmin client.</p>
-
-<h6 id="arguments">Arguments:</h6>
-
-<ul>
-<li><strong>base_url (str):</strong>  The base URL for the Adaptive API.</li>
-<li><strong>api_key (str, optional):</strong>  API key for authentication.
-Defaults to None, in which use environment variable <code>ADAPTIVE_KEY</code> needs to be set.</li>
-</ul>
+            <div class="docstring"><p>Get the current default use case key.</p>
 </div>
 
 
                             </div>
-                            <div id="AdaptiveAdmin.evaluation" class="classattr">
-                                <div class="attr variable">
-            <span class="name">evaluation</span><span class="annotation">: <a href="adaptive_sdk/resources.html#EvaluationAdmin">adaptive_sdk.resources.EvaluationAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.evaluation"></a>
-    
-    
-
-                            </div>
-                            <div id="AdaptiveAdmin.feedback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">feedback</span><span class="annotation">: <a href="adaptive_sdk/resources.html#FeedbackAdmin">adaptive_sdk.resources.FeedbackAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.feedback"></a>
-    
-    
-
-                            </div>
-                            <div id="AdaptiveAdmin.models" class="classattr">
-                                <div class="attr variable">
-            <span class="name">models</span><span class="annotation">: <a href="adaptive_sdk/resources.html#ModelsAdmin">adaptive_sdk.resources.ModelsAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.models"></a>
-    
-    
-
-                            </div>
-                            <div id="AdaptiveAdmin.training" class="classattr">
-                                <div class="attr variable">
-            <span class="name">training</span><span class="annotation">: <a href="adaptive_sdk/resources.html#TrainingAdmin">adaptive_sdk.resources.TrainingAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.training"></a>
-    
-    
-
-                            </div>
-                            <div id="AdaptiveAdmin.use_cases" class="classattr">
-                                <div class="attr variable">
-            <span class="name">use_cases</span><span class="annotation">: <a href="adaptive_sdk/resources.html#UseCasesAdmin">adaptive_sdk.resources.UseCasesAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AdaptiveAdmin.use_cases"></a>
-    
-    
-
-                            </div>
-                            <div id="AdaptiveAdmin.with_use_case" class="classattr">
+                            <div id="AsyncAdaptive.set_default_use_case" class="classattr">
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">with_use_case</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="#Adaptive">Adaptive</a></span>:</span></span>
+        <span class="name">set_default_use_case</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="kc">None</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#AdaptiveAdmin.with_use_case"></a>
+    <a class="headerlink" href="#AsyncAdaptive.set_default_use_case"></a>
     
-            <div class="docstring"><p>Convert admin client to use case-bounded client.</p>
-
-<h6 id="arguments">Arguments:</h6>
-
-<ul>
-<li><strong>use_case (str):</strong>  Use case key.</li>
-</ul>
-</div>
-
-
-                            </div>
-                </section>
-                <section id="AsyncAdaptiveAdmin">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">AsyncAdaptiveAdmin</span><wbr>(<span class="base">adaptive_sdk.base_client.BaseAsyncClient</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin"></a>
-    
-    
-
-                            <div id="AsyncAdaptiveAdmin.__init__" class="classattr">
-                                <div class="attr function">
-            
-        <span class="name">AsyncAdaptiveAdmin</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.__init__"></a>
-    
-            <div class="docstring"><p>Instantiates a new asynchronous AdaptiveAdmin client.</p>
-
-<h6 id="arguments">Arguments:</h6>
-
-<ul>
-<li><strong>base_url (str):</strong>  The base URL for the Adaptive API.</li>
-<li><strong>api_key (str, optional):</strong>  API key for authentication.
-Defaults to None, in which use environment variable <code>ADAPTIVE_KEY</code> needs to be set.</li>
-</ul>
-</div>
-
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.evaluation" class="classattr">
-                                <div class="attr variable">
-            <span class="name">evaluation</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncEvaluationAdmin">adaptive_sdk.resources.AsyncEvaluationAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.evaluation"></a>
-    
-    
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.feedback" class="classattr">
-                                <div class="attr variable">
-            <span class="name">feedback</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncFeedbackAdmin">adaptive_sdk.resources.AsyncFeedbackAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.feedback"></a>
-    
-    
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.models" class="classattr">
-                                <div class="attr variable">
-            <span class="name">models</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncModelsAdmin">adaptive_sdk.resources.AsyncModelsAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.models"></a>
-    
-    
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.training" class="classattr">
-                                <div class="attr variable">
-            <span class="name">training</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncTrainingAdmin">adaptive_sdk.resources.AsyncTrainingAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.training"></a>
-    
-    
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.use_cases" class="classattr">
-                                <div class="attr variable">
-            <span class="name">use_cases</span><span class="annotation">: <a href="adaptive_sdk/resources.html#AsyncUseCasesAdmin">adaptive_sdk.resources.AsyncUseCasesAdmin</a></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.use_cases"></a>
-    
-    
-
-                            </div>
-                            <div id="AsyncAdaptiveAdmin.with_use_case" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">with_use_case</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="#AsyncAdaptive">AsyncAdaptive</a></span>:</span></span>
-
-        
-    </div>
-    <a class="headerlink" href="#AsyncAdaptiveAdmin.with_use_case"></a>
-    
-            <div class="docstring"><p>Convert admin client to use case-bounded client.</p>
-
-<h6 id="arguments">Arguments:</h6>
-
-<ul>
-<li><strong>use_case (str):</strong>  Use case key.</li>
-</ul>
+            <div class="docstring"><p>Set a default use case key to be used for use case-specific operations.</p>
 </div>
 
 

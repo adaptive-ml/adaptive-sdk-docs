@@ -163,10 +163,46 @@
 
             </li>
             <li>
+                    <a class="class" href="#CustomRecipe">CustomRecipe</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#CustomRecipe.guidelines">guidelines</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#CustomRecipe.feedback_key">feedback_key</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#DpotrainingParamsInput">DpotrainingParamsInput</a>
                             <ul class="memberlist">
                         <li>
                                 <a class="variable" href="#DpotrainingParamsInput.kl_div_coeff">kl_div_coeff</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#EvaluationDatasource">EvaluationDatasource</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#EvaluationDatasource.dataset">dataset</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#EvaluationDatasource.completions">completions</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#EvaluationDatasourceCompletions">EvaluationDatasourceCompletions</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#EvaluationDatasourceCompletions.filter">filter</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#EvaluationDatasourceCompletions.replay_interactions">replay_interactions</a>
                         </li>
                 </ul>
 
@@ -842,6 +878,41 @@
 
                             </div>
                 </section>
+                <section id="CustomRecipe">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">CustomRecipe</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipe"></a>
+    
+    
+
+                            <div id="CustomRecipe.guidelines" class="classattr">
+                                <div class="attr variable">
+            <span class="name">guidelines</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipe.guidelines"></a>
+    
+    
+
+                            </div>
+                            <div id="CustomRecipe.feedback_key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">feedback_key</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipe.feedback_key"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="DpotrainingParamsInput">
                     <div class="attr class">
             
@@ -861,6 +932,91 @@
         
     </div>
     <a class="headerlink" href="#DpotrainingParamsInput.kl_div_coeff"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="EvaluationDatasource">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">EvaluationDatasource</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasource"></a>
+    
+            <div class="docstring"><p>Datasource selection for evaluation.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>dataset:</strong>  Key of previously uploaded file dataset.</li>
+<li><strong>completions:</strong>  Selection config for completions from the interaction store.</li>
+</ul>
+</div>
+
+
+                            <div id="EvaluationDatasource.dataset" class="classattr">
+                                <div class="attr variable">
+            <span class="name">dataset</span><span class="annotation">: typing_extensions.NotRequired[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasource.dataset"></a>
+    
+    
+
+                            </div>
+                            <div id="EvaluationDatasource.completions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">completions</span><span class="annotation">: typing_extensions.NotRequired[<a href="#EvaluationDatasourceCompletions">EvaluationDatasourceCompletions</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasource.completions"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="EvaluationDatasourceCompletions">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">EvaluationDatasourceCompletions</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasourceCompletions"></a>
+    
+            <div class="docstring"><h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>replay_interactions:</strong>  If <code>False</code>, logged completions are evaluated. If <code>True</code>, prompts are replayed, and new completions are evaluated.</li>
+</ul>
+</div>
+
+
+                            <div id="EvaluationDatasourceCompletions.filter" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filter</span><span class="annotation">: typing_extensions.Required[<a href="#ListCompletionsFilterInput">ListCompletionsFilterInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasourceCompletions.filter"></a>
+    
+    
+
+                            </div>
+                            <div id="EvaluationDatasourceCompletions.replay_interactions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">replay_interactions</span><span class="annotation">: bool</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EvaluationDatasourceCompletions.replay_interactions"></a>
     
     
 
