@@ -274,6 +274,39 @@
 
             </li>
             <li>
+                    <a class="class" href="#Users">Users</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#Users.__init__">Users</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Users.teams">teams</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Users.me">me</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Users.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Users.update">update</a>
+                        </li>
+                        <li>
+                                <a class="class" href="#Users.Teams">Users.Teams</a>
+                                        <ul class="memberlist">
+                                    <li>
+                                            <a class="function" href="#Users.Teams.__init__">Teams</a>
+                                    </li>
+                                    <li>
+                                            <a class="function" href="#Users.Teams.list">list</a>
+                                    </li>
+                            </ul>
+
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#AsyncABTests">AsyncABTests</a>
                             <ul class="memberlist">
                         <li>
@@ -512,6 +545,39 @@
                         </li>
                         <li>
                                 <a class="function" href="#AsyncUseCase.get">get</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#AsyncUsers">AsyncUsers</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#AsyncUsers.__init__">AsyncUsers</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#AsyncUsers.teams">teams</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncUsers.me">me</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncUsers.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncUsers.update">update</a>
+                        </li>
+                        <li>
+                                <a class="class" href="#AsyncUsers.Teams">AsyncUsers.Teams</a>
+                                        <ul class="memberlist">
+                                    <li>
+                                            <a class="function" href="#AsyncUsers.Teams.__init__">Teams</a>
+                                    </li>
+                                    <li>
+                                            <a class="function" href="#AsyncUsers.Teams.list">list</a>
+                                    </li>
+                            </ul>
+
                         </li>
                 </ul>
 
@@ -1769,6 +1835,135 @@ If not set, will be the same as <code>key</code>.</li>
 
                             </div>
                 </section>
+                <section id="Users">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">Users</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.SyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#Users"></a>
+    
+            <div class="docstring"><p>Resource to manage users and permissions.</p>
+</div>
+
+
+                            <div id="Users.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">Users</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#Adaptive">adaptive_sdk.Adaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="Users.teams" class="classattr">
+                                <div class="attr variable">
+            <span class="name">teams</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.teams"></a>
+    
+    
+
+                            </div>
+                            <div id="Users.me" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">me</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#UserData">adaptive_sdk.graphql_client.UserData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.me"></a>
+    
+            <div class="docstring"><p>Get details of current user.</p>
+</div>
+
+
+                            </div>
+                            <div id="Users.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#UserData">adaptive_sdk.graphql_client.UserData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.list"></a>
+    
+            <div class="docstring"><p>List all users registered to Adaptive deployment.</p>
+</div>
+
+
+                            </div>
+                            <div id="Users.update" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">update</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">email</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">team</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">role</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#UpdateUserSetTeamMember">adaptive_sdk.graphql_client.UpdateUserSetTeamMember</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.update"></a>
+    
+            <div class="docstring"><p>Update team and role for user.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>email:</strong>  User email.</li>
+<li><strong>team:</strong>  Key of team to which user will be added to.</li>
+<li><strong>role:</strong>  Assigned role</li>
+</ul>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="Users.Teams">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">Users.Teams</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.SyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#Users.Teams"></a>
+    
+    
+
+                            <div id="Users.Teams.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">Users.Teams</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#Adaptive">adaptive_sdk.Adaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.Teams.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="Users.Teams.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">List</span><span class="p">[</span><span class="n"><a href="graphql_client.html#ListTeamsTeams">adaptive_sdk.graphql_client.ListTeamsTeams</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Users.Teams.list"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="AsyncABTests">
                     <div class="attr class">
             
@@ -2993,6 +3188,135 @@ If not set, will be the same as <code>key</code>.</li>
             <div class="docstring"><p>Get details for the client's use case.</p>
 </div>
 
+
+                            </div>
+                </section>
+                <section id="AsyncUsers">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">AsyncUsers</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.AsyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers"></a>
+    
+            <div class="docstring"><p>Resource to manage users and permissions.</p>
+</div>
+
+
+                            <div id="AsyncUsers.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">AsyncUsers</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#AsyncAdaptive">adaptive_sdk.AsyncAdaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncUsers.teams" class="classattr">
+                                <div class="attr variable">
+            <span class="name">teams</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.teams"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncUsers.me" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">me</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#UserData">adaptive_sdk.graphql_client.UserData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.me"></a>
+    
+            <div class="docstring"><p>Get details of current user.</p>
+</div>
+
+
+                            </div>
+                            <div id="AsyncUsers.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#UserData">adaptive_sdk.graphql_client.UserData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.list"></a>
+    
+            <div class="docstring"><p>List all users registered to Adaptive deployment.</p>
+</div>
+
+
+                            </div>
+                            <div id="AsyncUsers.update" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">update</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">email</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">team</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">role</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#UpdateUserSetTeamMember">adaptive_sdk.graphql_client.UpdateUserSetTeamMember</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.update"></a>
+    
+            <div class="docstring"><p>Update team and role for user.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>email:</strong>  User email.</li>
+<li><strong>team:</strong>  Key of team to which user will be added to.</li>
+<li><strong>role:</strong>  Assigned role</li>
+</ul>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="AsyncUsers.Teams">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">AsyncUsers.Teams</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.AsyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.Teams"></a>
+    
+    
+
+                            <div id="AsyncUsers.Teams.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">AsyncUsers.Teams</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#AsyncAdaptive">adaptive_sdk.AsyncAdaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.Teams.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncUsers.Teams.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">List</span><span class="p">[</span><span class="n"><a href="graphql_client.html#ListTeamsTeams">adaptive_sdk.graphql_client.ListTeamsTeams</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncUsers.Teams.list"></a>
+    
+    
 
                             </div>
                 </section>
