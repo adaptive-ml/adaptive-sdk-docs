@@ -637,6 +637,9 @@
                                 <a class="variable" href="#CompletionDataMetadata.usage">usage</a>
                         </li>
                         <li>
+                                <a class="variable" href="#CompletionDataMetadata.system">system</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#CompletionDataMetadata.model_config">model_config</a>
                         </li>
                 </ul>
@@ -701,6 +704,21 @@
                         </li>
                         <li>
                                 <a class="variable" href="#CompletionSourceOutput.AUTOMATION">AUTOMATION</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ComputePoolCapability">ComputePoolCapability</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ComputePoolCapability.INFERENCE">INFERENCE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ComputePoolCapability.TRAINING">TRAINING</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ComputePoolCapability.EVALUATION">EVALUATION</a>
                         </li>
                 </ul>
 
@@ -1368,6 +1386,12 @@
                         <li>
                                 <a class="variable" href="#ExternalModelProviderName.GOOGLE">GOOGLE</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#ExternalModelProviderName.ANTHROPIC">ANTHROPIC</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ExternalModelProviderName.NVIDIA">NVIDIA</a>
+                        </li>
                 </ul>
 
             </li>
@@ -1450,6 +1474,9 @@
                                 <a class="variable" href="#JobStageOutputDataInfoBatchInferenceJobStageOutput.processed_num_samples">processed_num_samples</a>
                         </li>
                         <li>
+                                <a class="variable" href="#JobStageOutputDataInfoBatchInferenceJobStageOutput.monitoring_link">monitoring_link</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#JobStageOutputDataInfoBatchInferenceJobStageOutput.model_config">model_config</a>
                         </li>
                 </ul>
@@ -1468,6 +1495,9 @@
                                 <a class="variable" href="#JobStageOutputDataInfoEvalJobStageOutput.processed_num_samples">processed_num_samples</a>
                         </li>
                         <li>
+                                <a class="variable" href="#JobStageOutputDataInfoEvalJobStageOutput.monitoring_link">monitoring_link</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#JobStageOutputDataInfoEvalJobStageOutput.model_config">model_config</a>
                         </li>
                 </ul>
@@ -1480,7 +1510,7 @@
                                 <a class="variable" href="#JobStageOutputDataInfoTrainingJobStageOutput.typename__">typename__</a>
                         </li>
                         <li>
-                                <a class="variable" href="#JobStageOutputDataInfoTrainingJobStageOutput.training_monitoring_link">training_monitoring_link</a>
+                                <a class="variable" href="#JobStageOutputDataInfoTrainingJobStageOutput.monitoring_link">monitoring_link</a>
                         </li>
                         <li>
                                 <a class="variable" href="#JobStageOutputDataInfoTrainingJobStageOutput.total_num_samples">total_num_samples</a>
@@ -1628,6 +1658,48 @@
                         </li>
                         <li>
                                 <a class="variable" href="#ListCompletionsFilterOutputDataTimerange.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ListComputePools">ListComputePools</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ListComputePools.compute_pools">compute_pools</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListComputePools.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ListComputePoolsComputePools">ListComputePoolsComputePools</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePools.key">key</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePools.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePools.capabilities">capabilities</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePools.partitions">partitions</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePools.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ListComputePoolsComputePoolsPartitions">ListComputePoolsComputePoolsPartitions</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ListComputePoolsComputePoolsPartitions.model_config">model_config</a>
                         </li>
                 </ul>
 
@@ -1907,6 +1979,27 @@
                             <ul class="memberlist">
                         <li>
                                 <a class="variable" href="#ListModelsModelsBackbone.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ListPartitions">ListPartitions</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ListPartitions.partitions">partitions</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ListPartitions.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ListPartitionsPartitions">ListPartitionsPartitions</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ListPartitionsPartitions.model_config">model_config</a>
                         </li>
                 </ul>
 
@@ -2479,6 +2572,15 @@
                                 <a class="variable" href="#OpenAIModel.GPT4O_MINI">GPT4O_MINI</a>
                         </li>
                         <li>
+                                <a class="variable" href="#OpenAIModel.O1">O1</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OpenAIModel.O1_MINI">O1_MINI</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#OpenAIModel.O3_MINI">O3_MINI</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#OpenAIModel.GPT4">GPT4</a>
                         </li>
                         <li>
@@ -2486,6 +2588,78 @@
                         </li>
                         <li>
                                 <a class="variable" href="#OpenAIModel.GPT3_5_TURBO">GPT3_5_TURBO</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PartitionData">PartitionData</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#PartitionData.id">id</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.key">key</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.compute_pool">compute_pool</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.status">status</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.url">url</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.world_size">world_size</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.gpu_types">gpu_types</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.created_at">created_at</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.online_models">online_models</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionData.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PartitionDataComputePool">PartitionDataComputePool</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#PartitionDataComputePool.key">key</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionDataComputePool.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionDataComputePool.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PartitionDataOnlineModels">PartitionDataOnlineModels</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#PartitionDataOnlineModels.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#PartitionStatus">PartitionStatus</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#PartitionStatus.ONLINE">ONLINE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PartitionStatus.OFFLINE">OFFLINE</a>
                         </li>
                 </ul>
 
@@ -2500,10 +2674,16 @@
                                 <a class="variable" href="#ProviderName.OPEN_AI">OPEN_AI</a>
                         </li>
                         <li>
-                                <a class="variable" href="#ProviderName.MANGROVE">MANGROVE</a>
+                                <a class="variable" href="#ProviderName.HARMONY">HARMONY</a>
                         </li>
                         <li>
                                 <a class="variable" href="#ProviderName.GOOGLE">GOOGLE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ProviderName.ANTHROPIC">ANTHROPIC</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ProviderName.NVIDIA">NVIDIA</a>
                         </li>
                 </ul>
 
@@ -2740,6 +2920,18 @@
 
             </li>
             <li>
+                    <a class="class" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.typename__">typename__</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#TrainingJobData">TrainingJobData</a>
                             <ul class="memberlist">
                         <li>
@@ -2833,13 +3025,7 @@
                                 <a class="variable" href="#TrainingJobDataConfigSampleConfig.feedback_type">feedback_type</a>
                         </li>
                         <li>
-                                <a class="variable" href="#TrainingJobDataConfigSampleConfig.selection_type">selection_type</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#TrainingJobDataConfigSampleConfig.max_samples">max_samples</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#TrainingJobDataConfigSampleConfig.filter">filter</a>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfig.datasource">datasource</a>
                         </li>
                         <li>
                                 <a class="variable" href="#TrainingJobDataConfigSampleConfig.model_config">model_config</a>
@@ -2848,10 +3034,46 @@
 
             </li>
             <li>
-                    <a class="class" href="#TrainingJobDataConfigSampleConfigFilter">TrainingJobDataConfigSampleConfigFilter</a>
+                    <a class="class" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput</a>
                             <ul class="memberlist">
                         <li>
-                                <a class="variable" href="#TrainingJobDataConfigSampleConfigFilter.model_config">model_config</a>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.typename__">typename__</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.selection_type">selection_type</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.max_samples">max_samples</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.filter">filter</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.typename__">typename__</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.dataset_key">dataset_key</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.model_config">model_config</a>
                         </li>
                 </ul>
 
@@ -2951,6 +3173,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#TrainingMetadataInputAlignmentMethod.PPO">PPO</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInputAlignmentMethod.SFT">SFT</a>
                         </li>
                 </ul>
 
@@ -5390,6 +5615,17 @@
     
 
                             </div>
+                            <div id="CompletionDataMetadata.system" class="classattr">
+                                <div class="attr variable">
+            <span class="name">system</span><span class="annotation">: Optional[Any]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CompletionDataMetadata.system"></a>
+    
+    
+
+                            </div>
                             <div id="CompletionDataMetadata.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
@@ -5617,6 +5853,57 @@
         
     </div>
     <a class="headerlink" href="#CompletionSourceOutput.AUTOMATION"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="ComputePoolCapability">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ComputePoolCapability</span><wbr>(<span class="base">builtins.str</span>, <span class="base">enum.Enum</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ComputePoolCapability"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ComputePoolCapability.INFERENCE" class="classattr">
+                                <div class="attr variable">
+            <span class="name">INFERENCE</span>        =
+<span class="default_value">&lt;<a href="#ComputePoolCapability.INFERENCE">ComputePoolCapability.INFERENCE</a>: &#39;INFERENCE&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ComputePoolCapability.INFERENCE"></a>
+    
+    
+
+                            </div>
+                            <div id="ComputePoolCapability.TRAINING" class="classattr">
+                                <div class="attr variable">
+            <span class="name">TRAINING</span>        =
+<span class="default_value">&lt;<a href="#ComputePoolCapability.TRAINING">ComputePoolCapability.TRAINING</a>: &#39;TRAINING&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ComputePoolCapability.TRAINING"></a>
+    
+    
+
+                            </div>
+                            <div id="ComputePoolCapability.EVALUATION" class="classattr">
+                                <div class="attr variable">
+            <span class="name">EVALUATION</span>        =
+<span class="default_value">&lt;<a href="#ComputePoolCapability.EVALUATION">ComputePoolCapability.EVALUATION</a>: &#39;EVALUATION&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ComputePoolCapability.EVALUATION"></a>
     
     
 
@@ -7907,6 +8194,30 @@
     
 
                             </div>
+                            <div id="ExternalModelProviderName.ANTHROPIC" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ANTHROPIC</span>        =
+<span class="default_value">&lt;<a href="#ExternalModelProviderName.ANTHROPIC">ExternalModelProviderName.ANTHROPIC</a>: &#39;ANTHROPIC&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ExternalModelProviderName.ANTHROPIC"></a>
+    
+    
+
+                            </div>
+                            <div id="ExternalModelProviderName.NVIDIA" class="classattr">
+                                <div class="attr variable">
+            <span class="name">NVIDIA</span>        =
+<span class="default_value">&lt;<a href="#ExternalModelProviderName.NVIDIA">ExternalModelProviderName.NVIDIA</a>: &#39;NVIDIA&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ExternalModelProviderName.NVIDIA"></a>
+    
+    
+
+                            </div>
                 </section>
                 <section id="FeedbackType">
                     <div class="attr class">
@@ -8179,6 +8490,17 @@
     
 
                             </div>
+                            <div id="JobStageOutputDataInfoBatchInferenceJobStageOutput.monitoring_link" class="classattr">
+                                <div class="attr variable">
+            <span class="name">monitoring_link</span><span class="annotation">: Optional[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JobStageOutputDataInfoBatchInferenceJobStageOutput.monitoring_link"></a>
+    
+    
+
+                            </div>
                             <div id="JobStageOutputDataInfoBatchInferenceJobStageOutput.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
@@ -8242,6 +8564,17 @@
     
 
                             </div>
+                            <div id="JobStageOutputDataInfoEvalJobStageOutput.monitoring_link" class="classattr">
+                                <div class="attr variable">
+            <span class="name">monitoring_link</span><span class="annotation">: Optional[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JobStageOutputDataInfoEvalJobStageOutput.monitoring_link"></a>
+    
+    
+
+                            </div>
                             <div id="JobStageOutputDataInfoEvalJobStageOutput.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
@@ -8283,13 +8616,13 @@
     
 
                             </div>
-                            <div id="JobStageOutputDataInfoTrainingJobStageOutput.training_monitoring_link" class="classattr">
+                            <div id="JobStageOutputDataInfoTrainingJobStageOutput.monitoring_link" class="classattr">
                                 <div class="attr variable">
-            <span class="name">training_monitoring_link</span><span class="annotation">: Optional[str]</span>
+            <span class="name">monitoring_link</span><span class="annotation">: Optional[str]</span>
 
         
     </div>
-    <a class="headerlink" href="#JobStageOutputDataInfoTrainingJobStageOutput.training_monitoring_link"></a>
+    <a class="headerlink" href="#JobStageOutputDataInfoTrainingJobStageOutput.monitoring_link"></a>
     
     
 
@@ -8805,6 +9138,151 @@
         
     </div>
     <a class="headerlink" href="#ListCompletionsFilterOutputDataTimerange.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ListComputePools">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ListComputePools</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePools"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ListComputePools.compute_pools" class="classattr">
+                                <div class="attr variable">
+            <span class="name">compute_pools</span><span class="annotation">: List[<a href="#ListComputePoolsComputePools">ListComputePoolsComputePools</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePools.compute_pools"></a>
+    
+    
+
+                            </div>
+                            <div id="ListComputePools.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="ListComputePools.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ListComputePools.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePools.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ListComputePoolsComputePools">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ListComputePoolsComputePools</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ListComputePoolsComputePools.key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">key</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools.key"></a>
+    
+    
+
+                            </div>
+                            <div id="ListComputePoolsComputePools.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools.name"></a>
+    
+    
+
+                            </div>
+                            <div id="ListComputePoolsComputePools.capabilities" class="classattr">
+                                <div class="attr variable">
+            <span class="name">capabilities</span><span class="annotation">: List[<a href="#ComputePoolCapability">ComputePoolCapability</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools.capabilities"></a>
+    
+    
+
+                            </div>
+                            <div id="ListComputePoolsComputePools.partitions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">partitions</span><span class="annotation">: List[<a href="#ListComputePoolsComputePoolsPartitions">ListComputePoolsComputePoolsPartitions</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools.partitions"></a>
+    
+    
+
+                            </div>
+                            <div id="ListComputePoolsComputePools.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="ListComputePoolsComputePools.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ListComputePoolsComputePools.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePools.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ListComputePoolsComputePoolsPartitions">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ListComputePoolsComputePoolsPartitions</span><wbr>(<span class="base"><a href="#PartitionData">adaptive_sdk.graphql_client.PartitionData</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePoolsPartitions"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ListComputePoolsComputePoolsPartitions.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="ListComputePoolsComputePoolsPartitions.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ListComputePoolsComputePoolsPartitions.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListComputePoolsComputePoolsPartitions.model_config"></a>
     
             <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
 </div>
@@ -9765,6 +10243,77 @@
         
     </div>
     <a class="headerlink" href="#ListModelsModelsBackbone.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ListPartitions">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ListPartitions</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ListPartitions"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ListPartitions.partitions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">partitions</span><span class="annotation">: List[<a href="#ListPartitionsPartitions">ListPartitionsPartitions</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListPartitions.partitions"></a>
+    
+    
+
+                            </div>
+                            <div id="ListPartitions.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="ListPartitions.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ListPartitions.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListPartitions.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ListPartitionsPartitions">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ListPartitionsPartitions</span><wbr>(<span class="base"><a href="#PartitionData">adaptive_sdk.graphql_client.PartitionData</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ListPartitionsPartitions"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ListPartitionsPartitions.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="ListPartitionsPartitions.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="ListPartitionsPartitions.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ListPartitionsPartitions.model_config"></a>
     
             <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
 </div>
@@ -11756,6 +12305,42 @@
     
 
                             </div>
+                            <div id="OpenAIModel.O1" class="classattr">
+                                <div class="attr variable">
+            <span class="name">O1</span>        =
+<span class="default_value">&lt;<a href="#OpenAIModel.O1">OpenAIModel.O1</a>: &#39;O1&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OpenAIModel.O1"></a>
+    
+    
+
+                            </div>
+                            <div id="OpenAIModel.O1_MINI" class="classattr">
+                                <div class="attr variable">
+            <span class="name">O1_MINI</span>        =
+<span class="default_value">&lt;<a href="#OpenAIModel.O1_MINI">OpenAIModel.O1_MINI</a>: &#39;O1_MINI&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OpenAIModel.O1_MINI"></a>
+    
+    
+
+                            </div>
+                            <div id="OpenAIModel.O3_MINI" class="classattr">
+                                <div class="attr variable">
+            <span class="name">O3_MINI</span>        =
+<span class="default_value">&lt;<a href="#OpenAIModel.O3_MINI">OpenAIModel.O3_MINI</a>: &#39;O3_MINI&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#OpenAIModel.O3_MINI"></a>
+    
+    
+
+                            </div>
                             <div id="OpenAIModel.GPT4" class="classattr">
                                 <div class="attr variable">
             <span class="name">GPT4</span>        =
@@ -11788,6 +12373,256 @@
         
     </div>
     <a class="headerlink" href="#OpenAIModel.GPT3_5_TURBO"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="PartitionData">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PartitionData</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="PartitionData.id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">id</span><span class="annotation">: Any</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.id"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">key</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.key"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.compute_pool" class="classattr">
+                                <div class="attr variable">
+            <span class="name">compute_pool</span><span class="annotation">: Optional[<a href="#PartitionDataComputePool">PartitionDataComputePool</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.compute_pool"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.status" class="classattr">
+                                <div class="attr variable">
+            <span class="name">status</span><span class="annotation">: <a href="#PartitionStatus">PartitionStatus</a></span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.status"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.url" class="classattr">
+                                <div class="attr variable">
+            <span class="name">url</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.url"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.world_size" class="classattr">
+                                <div class="attr variable">
+            <span class="name">world_size</span><span class="annotation">: int</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.world_size"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.gpu_types" class="classattr">
+                                <div class="attr variable">
+            <span class="name">gpu_types</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.gpu_types"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.created_at" class="classattr">
+                                <div class="attr variable">
+            <span class="name">created_at</span><span class="annotation">: int</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.created_at"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.online_models" class="classattr">
+                                <div class="attr variable">
+            <span class="name">online_models</span><span class="annotation">: List[<a href="#PartitionDataOnlineModels">PartitionDataOnlineModels</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.online_models"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionData.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="PartitionData.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="PartitionData.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionData.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="PartitionDataComputePool">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PartitionDataComputePool</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataComputePool"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="PartitionDataComputePool.key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">key</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataComputePool.key"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionDataComputePool.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataComputePool.name"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionDataComputePool.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="PartitionDataComputePool.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="PartitionDataComputePool.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataComputePool.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="PartitionDataOnlineModels">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PartitionDataOnlineModels</span><wbr>(<span class="base"><a href="#ModelData">adaptive_sdk.graphql_client.ModelData</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataOnlineModels"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="PartitionDataOnlineModels.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="PartitionDataOnlineModels.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="PartitionDataOnlineModels.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionDataOnlineModels.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="PartitionStatus">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">PartitionStatus</span><wbr>(<span class="base">builtins.str</span>, <span class="base">enum.Enum</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionStatus"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="PartitionStatus.ONLINE" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ONLINE</span>        =
+<span class="default_value">&lt;<a href="#PartitionStatus.ONLINE">PartitionStatus.ONLINE</a>: &#39;ONLINE&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionStatus.ONLINE"></a>
+    
+    
+
+                            </div>
+                            <div id="PartitionStatus.OFFLINE" class="classattr">
+                                <div class="attr variable">
+            <span class="name">OFFLINE</span>        =
+<span class="default_value">&lt;<a href="#PartitionStatus.OFFLINE">PartitionStatus.OFFLINE</a>: &#39;OFFLINE&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PartitionStatus.OFFLINE"></a>
     
     
 
@@ -11831,14 +12666,14 @@
     
 
                             </div>
-                            <div id="ProviderName.MANGROVE" class="classattr">
+                            <div id="ProviderName.HARMONY" class="classattr">
                                 <div class="attr variable">
-            <span class="name">MANGROVE</span>        =
-<span class="default_value">&lt;<a href="#ProviderName.MANGROVE">ProviderName.MANGROVE</a>: &#39;MANGROVE&#39;&gt;</span>
+            <span class="name">HARMONY</span>        =
+<span class="default_value">&lt;<a href="#ProviderName.HARMONY">ProviderName.HARMONY</a>: &#39;HARMONY&#39;&gt;</span>
 
         
     </div>
-    <a class="headerlink" href="#ProviderName.MANGROVE"></a>
+    <a class="headerlink" href="#ProviderName.HARMONY"></a>
     
     
 
@@ -11851,6 +12686,30 @@
         
     </div>
     <a class="headerlink" href="#ProviderName.GOOGLE"></a>
+    
+    
+
+                            </div>
+                            <div id="ProviderName.ANTHROPIC" class="classattr">
+                                <div class="attr variable">
+            <span class="name">ANTHROPIC</span>        =
+<span class="default_value">&lt;<a href="#ProviderName.ANTHROPIC">ProviderName.ANTHROPIC</a>: &#39;ANTHROPIC&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ProviderName.ANTHROPIC"></a>
+    
+    
+
+                            </div>
+                            <div id="ProviderName.NVIDIA" class="classattr">
+                                <div class="attr variable">
+            <span class="name">NVIDIA</span>        =
+<span class="default_value">&lt;<a href="#ProviderName.NVIDIA">ProviderName.NVIDIA</a>: &#39;NVIDIA&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ProviderName.NVIDIA"></a>
     
     
 
@@ -12163,7 +13022,7 @@
                             </div>
                             <div id="TrainingConfigOutputData.training_objective" class="classattr">
                                 <div class="attr variable">
-            <span class="name">training_objective</span><span class="annotation">: Union[<a href="#TrainingConfigOutputDataTrainingObjectiveMetricTrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveMetricTrainingParamsOutput</a>, <a href="#TrainingConfigOutputDataTrainingObjectiveGuidelinesTrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveGuidelinesTrainingParamsOutput</a>]</span>
+            <span class="name">training_objective</span><span class="annotation">: Union[<a href="#TrainingConfigOutputDataTrainingObjectiveMetricTrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveMetricTrainingParamsOutput</a>, <a href="#TrainingConfigOutputDataTrainingObjectiveGuidelinesTrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveGuidelinesTrainingParamsOutput</a>, <a href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput">TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput</a>]</span>
 
         
     </div>
@@ -12659,6 +13518,47 @@
 
                             </div>
                 </section>
+                <section id="TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.typename__" class="classattr">
+                                <div class="attr variable">
+            <span class="name">typename__</span><span class="annotation">: Literal[&#39;SfttrainingParamsOutput&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.typename__"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingConfigOutputDataTrainingObjectiveSfttrainingParamsOutput.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
                 <section id="TrainingJobData">
                     <div class="attr class">
             
@@ -12991,35 +13891,13 @@
     
 
                             </div>
-                            <div id="TrainingJobDataConfigSampleConfig.selection_type" class="classattr">
+                            <div id="TrainingJobDataConfigSampleConfig.datasource" class="classattr">
                                 <div class="attr variable">
-            <span class="name">selection_type</span><span class="annotation">: <a href="#SelectionTypeOutput">SelectionTypeOutput</a></span>
+            <span class="name">datasource</span><span class="annotation">: Union[<a href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput</a>, <a href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput</a>]</span>
 
         
     </div>
-    <a class="headerlink" href="#TrainingJobDataConfigSampleConfig.selection_type"></a>
-    
-    
-
-                            </div>
-                            <div id="TrainingJobDataConfigSampleConfig.max_samples" class="classattr">
-                                <div class="attr variable">
-            <span class="name">max_samples</span><span class="annotation">: Optional[int]</span>
-
-        
-    </div>
-    <a class="headerlink" href="#TrainingJobDataConfigSampleConfig.max_samples"></a>
-    
-    
-
-                            </div>
-                            <div id="TrainingJobDataConfigSampleConfig.filter" class="classattr">
-                                <div class="attr variable">
-            <span class="name">filter</span><span class="annotation">: Optional[<a href="#TrainingJobDataConfigSampleConfigFilter">TrainingJobDataConfigSampleConfigFilter</a>]</span>
-
-        
-    </div>
-    <a class="headerlink" href="#TrainingJobDataConfigSampleConfig.filter"></a>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfig.datasource"></a>
     
     
 
@@ -13040,29 +13918,155 @@
 
                             </div>
                 </section>
-                <section id="TrainingJobDataConfigSampleConfigFilter">
+                <section id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">TrainingJobDataConfigSampleConfigFilter</span><wbr>(<span class="base"><a href="#ListCompletionsFilterOutputData">adaptive_sdk.graphql_client.ListCompletionsFilterOutputData</a></span>):
+    <span class="name">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
 
         
     </div>
-    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigFilter"></a>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput"></a>
     
             <div class="docstring"><p></p>
 </div>
 
 
-                            <div id="TrainingJobDataConfigSampleConfigFilter.model_config" class="classattr">
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.typename__" class="classattr">
                                 <div class="attr variable">
-            <span class="name">model_config</span>        =
-<input id="TrainingJobDataConfigSampleConfigFilter.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="TrainingJobDataConfigSampleConfigFilter.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+            <span class="name">typename__</span><span class="annotation">: Literal[&#39;SampleDatasourceCompletionsOutput&#39;]</span>
 
         
     </div>
-    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigFilter.model_config"></a>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.typename__"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.selection_type" class="classattr">
+                                <div class="attr variable">
+            <span class="name">selection_type</span><span class="annotation">: <a href="#SelectionTypeOutput">SelectionTypeOutput</a></span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.selection_type"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.max_samples" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_samples</span><span class="annotation">: Optional[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.max_samples"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.filter" class="classattr">
+                                <div class="attr variable">
+            <span class="name">filter</span><span class="annotation">: Optional[<a href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.filter"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutput.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter</span><wbr>(<span class="base"><a href="#ListCompletionsFilterOutputData">adaptive_sdk.graphql_client.ListCompletionsFilterOutputData</a></span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceCompletionsOutputFilter.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput</span><wbr>(<span class="base">adaptive_sdk.graphql_client.base_model.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.typename__" class="classattr">
+                                <div class="attr variable">
+            <span class="name">typename__</span><span class="annotation">: Literal[&#39;SampleDatasourceDatasetOutput&#39;]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.typename__"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.dataset_key" class="classattr">
+                                <div class="attr variable">
+            <span class="name">dataset_key</span><span class="annotation">: str</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.dataset_key"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<input id="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+            <label class="view-value-button pdoc-button" for="TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingJobDataConfigSampleConfigDatasourceSampleDatasourceDatasetOutput.model_config"></a>
     
             <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
 </div>
@@ -13403,6 +14407,18 @@
         
     </div>
     <a class="headerlink" href="#TrainingMetadataInputAlignmentMethod.PPO"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingMetadataInputAlignmentMethod.SFT" class="classattr">
+                                <div class="attr variable">
+            <span class="name">SFT</span>        =
+<span class="default_value">&lt;<a href="#TrainingMetadataInputAlignmentMethod.SFT">TrainingMetadataInputAlignmentMethod.SFT</a>: &#39;SFT&#39;&gt;</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInputAlignmentMethod.SFT"></a>
     
     
 

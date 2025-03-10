@@ -208,6 +208,18 @@
 
             </li>
             <li>
+                    <a class="class" href="#GuidelineInput">GuidelineInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#GuidelineInput.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GuidelineInput.description">description</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#GuidelinesTrainingParamsInput">GuidelinesTrainingParamsInput</a>
                             <ul class="memberlist">
                         <li>
@@ -295,6 +307,30 @@
 
             </li>
             <li>
+                    <a class="class" href="#ModelFilter">ModelFilter</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ModelFilter.in_storage">in_storage</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelFilter.available">available</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelFilter.trainable">trainable</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelFilter.kind">kind</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelFilter.view_all">view_all</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelFilter.online">online</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#PpotrainingParamsInput">PpotrainingParamsInput</a>
                             <ul class="memberlist">
                         <li>
@@ -310,13 +346,43 @@
                                 <a class="variable" href="#SampleConfigInput.feedback_type">feedback_type</a>
                         </li>
                         <li>
-                                <a class="variable" href="#SampleConfigInput.selection_type">selection_type</a>
+                                <a class="variable" href="#SampleConfigInput.datasource">datasource</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SampleDatasourceInput">SampleDatasourceInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#SampleDatasourceInput.completions">completions</a>
                         </li>
                         <li>
-                                <a class="variable" href="#SampleConfigInput.max_samples">max_samples</a>
+                                <a class="variable" href="#SampleDatasourceInput.dataset">dataset</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SampleDatasourceCompletions">SampleDatasourceCompletions</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#SampleDatasourceCompletions.selection_type">selection_type</a>
                         </li>
                         <li>
-                                <a class="variable" href="#SampleConfigInput.filter">filter</a>
+                                <a class="variable" href="#SampleDatasourceCompletions.max_samples">max_samples</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SampleDatasourceCompletions.filter">filter</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SampleDatasourceDataset">SampleDatasourceDataset</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#SampleDatasourceDataset.dataset">dataset</a>
                         </li>
                 </ul>
 
@@ -327,6 +393,12 @@
                         <li>
                                 <a class="variable" href="#ScalarMetricConfigInput.threshold">threshold</a>
                         </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#SftTrainingParamsInput">SftTrainingParamsInput</a>
+                            <ul class="memberlist">
                 </ul>
 
             </li>
@@ -392,6 +464,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#TrainingObjectiveInput.guidelines">guidelines</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingObjectiveInput.sft">sft</a>
                         </li>
                 </ul>
 
@@ -892,7 +967,7 @@
 
                             <div id="CustomRecipe.guidelines" class="classattr">
                                 <div class="attr variable">
-            <span class="name">guidelines</span><span class="annotation">: typing_extensions.Required[typing.List[adaptive_sdk.input_types.typed_dicts.GuidelineInput]]</span>
+            <span class="name">guidelines</span><span class="annotation">: typing_extensions.Required[typing.List[<a href="#GuidelineInput">GuidelineInput</a>]]</span>
 
         
     </div>
@@ -1022,6 +1097,41 @@
 
                             </div>
                 </section>
+                <section id="GuidelineInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">GuidelineInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelineInput"></a>
+    
+    
+
+                            <div id="GuidelineInput.name" class="classattr">
+                                <div class="attr variable">
+            <span class="name">name</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelineInput.name"></a>
+    
+    
+
+                            </div>
+                            <div id="GuidelineInput.description" class="classattr">
+                                <div class="attr variable">
+            <span class="name">description</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GuidelineInput.description"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="GuidelinesTrainingParamsInput">
                     <div class="attr class">
             
@@ -1047,7 +1157,7 @@
                             </div>
                             <div id="GuidelinesTrainingParamsInput.judge_model_prompt" class="classattr">
                                 <div class="attr variable">
-            <span class="name">judge_model_prompt</span><span class="annotation">: typing_extensions.Required[typing.List[adaptive_sdk.input_types.typed_dicts.GuidelineInput]]</span>
+            <span class="name">judge_model_prompt</span><span class="annotation">: typing_extensions.Required[typing.List[<a href="#GuidelineInput">GuidelineInput</a>]]</span>
 
         
     </div>
@@ -1321,6 +1431,85 @@
 
                             </div>
                 </section>
+                <section id="ModelFilter">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ModelFilter</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter"></a>
+    
+    
+
+                            <div id="ModelFilter.in_storage" class="classattr">
+                                <div class="attr variable">
+            <span class="name">in_storage</span><span class="annotation">: typing_extensions.NotRequired[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.in_storage"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelFilter.available" class="classattr">
+                                <div class="attr variable">
+            <span class="name">available</span><span class="annotation">: typing_extensions.NotRequired[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.available"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelFilter.trainable" class="classattr">
+                                <div class="attr variable">
+            <span class="name">trainable</span><span class="annotation">: typing_extensions.NotRequired[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.trainable"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelFilter.kind" class="classattr">
+                                <div class="attr variable">
+            <span class="name">kind</span><span class="annotation">: typing_extensions.NotRequired[typing.List[typing.Literal[&#39;Embedding&#39;, &#39;Generation&#39;]]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.kind"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelFilter.view_all" class="classattr">
+                                <div class="attr variable">
+            <span class="name">view_all</span><span class="annotation">: typing_extensions.NotRequired[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.view_all"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelFilter.online" class="classattr">
+                                <div class="attr variable">
+            <span class="name">online</span><span class="annotation">: typing_extensions.NotRequired[typing.List[typing.Literal[&#39;ONLINE&#39;, &#39;OFFLINE&#39;, &#39;PENDING&#39;, &#39;ERROR&#39;]]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelFilter.online"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="PpotrainingParamsInput">
                     <div class="attr class">
             
@@ -1368,35 +1557,118 @@
     
 
                             </div>
-                            <div id="SampleConfigInput.selection_type" class="classattr">
+                            <div id="SampleConfigInput.datasource" class="classattr">
+                                <div class="attr variable">
+            <span class="name">datasource</span><span class="annotation">: typing_extensions.Required[<a href="#SampleDatasourceInput">SampleDatasourceInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleConfigInput.datasource"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="SampleDatasourceInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">SampleDatasourceInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceInput"></a>
+    
+    
+
+                            <div id="SampleDatasourceInput.completions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">completions</span><span class="annotation">: typing_extensions.NotRequired[<a href="#SampleDatasourceCompletions">SampleDatasourceCompletions</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceInput.completions"></a>
+    
+    
+
+                            </div>
+                            <div id="SampleDatasourceInput.dataset" class="classattr">
+                                <div class="attr variable">
+            <span class="name">dataset</span><span class="annotation">: typing_extensions.NotRequired[<a href="#SampleDatasourceDataset">SampleDatasourceDataset</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceInput.dataset"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="SampleDatasourceCompletions">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">SampleDatasourceCompletions</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceCompletions"></a>
+    
+    
+
+                            <div id="SampleDatasourceCompletions.selection_type" class="classattr">
                                 <div class="attr variable">
             <span class="name">selection_type</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;ALL&#39;, &#39;RANDOM&#39;, &#39;LAST&#39;]]</span>
 
         
     </div>
-    <a class="headerlink" href="#SampleConfigInput.selection_type"></a>
+    <a class="headerlink" href="#SampleDatasourceCompletions.selection_type"></a>
     
     
 
                             </div>
-                            <div id="SampleConfigInput.max_samples" class="classattr">
+                            <div id="SampleDatasourceCompletions.max_samples" class="classattr">
                                 <div class="attr variable">
             <span class="name">max_samples</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
 
         
     </div>
-    <a class="headerlink" href="#SampleConfigInput.max_samples"></a>
+    <a class="headerlink" href="#SampleDatasourceCompletions.max_samples"></a>
     
     
 
                             </div>
-                            <div id="SampleConfigInput.filter" class="classattr">
+                            <div id="SampleDatasourceCompletions.filter" class="classattr">
                                 <div class="attr variable">
             <span class="name">filter</span><span class="annotation">: typing_extensions.NotRequired[<a href="#ListCompletionsFilterInput">ListCompletionsFilterInput</a>]</span>
 
         
     </div>
-    <a class="headerlink" href="#SampleConfigInput.filter"></a>
+    <a class="headerlink" href="#SampleDatasourceCompletions.filter"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="SampleDatasourceDataset">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">SampleDatasourceDataset</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceDataset"></a>
+    
+    
+
+                            <div id="SampleDatasourceDataset.dataset" class="classattr">
+                                <div class="attr variable">
+            <span class="name">dataset</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceDataset.dataset"></a>
     
     
 
@@ -1425,6 +1697,19 @@
     
 
                             </div>
+                </section>
+                <section id="SftTrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">SftTrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#SftTrainingParamsInput"></a>
+    
+    
+
                 </section>
                 <section id="TimeRange">
                     <div class="attr class">
@@ -1541,7 +1826,7 @@
                             </div>
                             <div id="TrainingMetadataInput.alignment_method" class="classattr">
                                 <div class="attr variable">
-            <span class="name">alignment_method</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PPO&#39;, &#39;DPO&#39;]]</span>
+            <span class="name">alignment_method</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PPO&#39;, &#39;DPO&#39;, &#39;SFT&#39;]]</span>
 
         
     </div>
@@ -1627,6 +1912,17 @@
         
     </div>
     <a class="headerlink" href="#TrainingObjectiveInput.guidelines"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingObjectiveInput.sft" class="classattr">
+                                <div class="attr variable">
+            <span class="name">sft</span><span class="annotation">: typing_extensions.NotRequired[<a href="#SftTrainingParamsInput">SftTrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingObjectiveInput.sft"></a>
     
     
 
