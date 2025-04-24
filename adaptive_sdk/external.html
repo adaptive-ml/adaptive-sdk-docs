@@ -46,7 +46,16 @@
                                 <a class="function" href="#RewardClient.validate_metadata">validate_metadata</a>
                         </li>
                         <li>
+                                <a class="function" href="#RewardClient.batch_validate_metadata">batch_validate_metadata</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#RewardClient.info">info</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#RewardClient.blocking_info">blocking_info</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#RewardClient.blocking_batch_score">blocking_batch_score</a>
                         </li>
                 </ul>
 
@@ -55,10 +64,19 @@
                     <a class="class" href="#RewardServer">RewardServer</a>
                             <ul class="memberlist">
                         <li>
+                                <a class="variable" href="#RewardServer.requests_journal">requests_journal</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#RewardServer.request_timeout_s">request_timeout_s</a>
                         </li>
                         <li>
-                                <a class="function" href="#RewardServer.score_timeout">score_timeout</a>
+                                <a class="variable" href="#RewardServer.metadata_cls">metadata_cls</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RewardServer.verbose">verbose</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#RewardServer.cleanup">cleanup</a>
                         </li>
                         <li>
                                 <a class="function" href="#RewardServer.score">score</a>
@@ -67,7 +85,7 @@
                                 <a class="function" href="#RewardServer.batch_score">batch_score</a>
                         </li>
                         <li>
-                                <a class="function" href="#RewardServer.validate_metadata">validate_metadata</a>
+                                <a class="function" href="#RewardServer.get_medata_schema">get_medata_schema</a>
                         </li>
                         <li>
                                 <a class="function" href="#RewardServer.info">info</a>
@@ -85,9 +103,6 @@
                                 <a class="variable" href="#Request.metadata">metadata</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Request.policy_tokenizer_key">policy_tokenizer_key</a>
-                        </li>
-                        <li>
                                 <a class="variable" href="#Request.model_config">model_config</a>
                         </li>
                 </ul>
@@ -100,7 +115,7 @@
                                 <a class="variable" href="#Response.reward">reward</a>
                         </li>
                         <li>
-                                <a class="variable" href="#Response.mask">mask</a>
+                                <a class="variable" href="#Response.metadata">metadata</a>
                         </li>
                         <li>
                                 <a class="variable" href="#Response.model_config">model_config</a>
@@ -214,7 +229,7 @@
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">turns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n"><a href="#Turn">Turn</a></span><span class="p">]</span>,</span><span class="param">	<span class="n">metadata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span>,</span><span class="param">	<span class="n">policy_tokenizer_key</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
+        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">req</span><span class="p">:</span> <span class="n"><a href="#Request">Request</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
 
         
     </div>
@@ -249,6 +264,19 @@
     
 
                             </div>
+                            <div id="RewardClient.batch_validate_metadata" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">batch_validate_metadata</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">list_of_metadata</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]]</span></span><span class="return-annotation">) -> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">external</span><span class="o">.</span><span class="n">reward_types</span><span class="o">.</span><span class="n">BatchedMetadataValidationResponse</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.batch_validate_metadata"></a>
+    
+    
+
+                            </div>
                             <div id="RewardClient.info" class="classattr">
                                 <div class="attr function">
             
@@ -262,12 +290,38 @@
     
 
                             </div>
+                            <div id="RewardClient.blocking_info" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">blocking_info</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n"><a href="#ServerInfo">ServerInfo</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.blocking_info"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardClient.blocking_batch_score" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">blocking_batch_score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">requests</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n"><a href="#Request">Request</a></span><span class="p">]</span></span><span class="return-annotation">) -> <span class="nb">list</span><span class="p">[</span><span class="n"><a href="#Response">Response</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.blocking_batch_score"></a>
+    
+    
+
+                            </div>
                 </section>
                 <section id="RewardServer">
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">RewardServer</span><wbr>(<span class="base">abc.ABC</span>):
+    <span class="name">RewardServer</span><wbr>(<span class="base">abc.ABC</span>, <span class="base">typing.Generic[~META]</span>):
 
         
     </div>
@@ -278,6 +332,17 @@ inheritance.</p>
 </div>
 
 
+                            <div id="RewardServer.requests_journal" class="classattr">
+                                <div class="attr variable">
+            <span class="name">requests_journal</span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardServer.requests_journal"></a>
+    
+    
+
+                            </div>
                             <div id="RewardServer.request_timeout_s" class="classattr">
                                 <div class="attr variable">
             <span class="name">request_timeout_s</span>
@@ -289,15 +354,37 @@ inheritance.</p>
     
 
                             </div>
-                            <div id="RewardServer.score_timeout" class="classattr">
-                                <div class="attr function">
-            
-        <span class="def">async def</span>
-        <span class="name">score_timeout</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">request</span><span class="p">:</span> <span class="n"><a href="#Request">Request</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
+                            <div id="RewardServer.metadata_cls" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metadata_cls</span>
 
         
     </div>
-    <a class="headerlink" href="#RewardServer.score_timeout"></a>
+    <a class="headerlink" href="#RewardServer.metadata_cls"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardServer.verbose" class="classattr">
+                                <div class="attr variable">
+            <span class="name">verbose</span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardServer.verbose"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardServer.cleanup" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">cleanup</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardServer.cleanup"></a>
     
     
 
@@ -307,7 +394,7 @@ inheritance.</p>
                     <div class="decorator decorator-abstractmethod">@abstractmethod</div>
 
         <span class="def">async def</span>
-        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">request</span><span class="p">:</span> <span class="n"><a href="#Request">Request</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
+        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">request</span><span class="p">:</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">external</span><span class="o">.</span><span class="n">reward_types</span><span class="o">.</span><span class="n">ValidatedRequest</span><span class="p">[</span><span class="o">~</span><span class="n">META</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
 
         
     </div>
@@ -320,7 +407,7 @@ inheritance.</p>
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">batch_score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">requests</span><span class="p">:</span> <span class="n"><a href="#BatchedRequest">BatchedRequest</a></span></span><span class="return-annotation">) -> <span class="n"><a href="#BatchedResponse">BatchedResponse</a></span>:</span></span>
+        <span class="name">batch_score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">requests</span><span class="p">:</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">external</span><span class="o">.</span><span class="n">reward_types</span><span class="o">.</span><span class="n">ValidatedBatchedRequest</span><span class="p">[</span><span class="o">~</span><span class="n">META</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#BatchedResponse">BatchedResponse</a></span>:</span></span>
 
         
     </div>
@@ -329,16 +416,15 @@ inheritance.</p>
     
 
                             </div>
-                            <div id="RewardServer.validate_metadata" class="classattr">
+                            <div id="RewardServer.get_medata_schema" class="classattr">
                                 <div class="attr function">
-                    <div class="decorator decorator-abstractmethod">@abstractmethod</div>
-
-        <span class="def">async def</span>
-        <span class="name">validate_metadata</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="n">metadata</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span></span><span class="return-annotation">):</span></span>
+            
+        <span class="def">def</span>
+        <span class="name">get_medata_schema</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">starlette</span><span class="o">.</span><span class="n">responses</span><span class="o">.</span><span class="n">JSONResponse</span>:</span></span>
 
         
     </div>
-    <a class="headerlink" href="#RewardServer.validate_metadata"></a>
+    <a class="headerlink" href="#RewardServer.get_medata_schema"></a>
     
     
 
@@ -362,7 +448,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Request</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">Request</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -385,7 +471,7 @@ inheritance.</p>
                             </div>
                             <div id="Request.metadata" class="classattr">
                                 <div class="attr variable">
-            <span class="name">metadata</span><span class="annotation">: dict[typing.Any, typing.Any]</span>
+            <span class="name">metadata</span><span class="annotation">: dict[str, typing.Any] | None</span>
 
         
     </div>
@@ -394,22 +480,10 @@ inheritance.</p>
     
 
                             </div>
-                            <div id="Request.policy_tokenizer_key" class="classattr">
-                                <div class="attr variable">
-            <span class="name">policy_tokenizer_key</span><span class="annotation">: str</span>
-
-        
-    </div>
-    <a class="headerlink" href="#Request.policy_tokenizer_key"></a>
-    
-    
-
-                            </div>
                             <div id="Request.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="Request.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="Request.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>
@@ -425,7 +499,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Response</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">Response</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -437,7 +511,7 @@ inheritance.</p>
 
                             <div id="Response.reward" class="classattr">
                                 <div class="attr variable">
-            <span class="name">reward</span><span class="annotation">: list[float]</span>
+            <span class="name">reward</span><span class="annotation">: float</span>
 
         
     </div>
@@ -446,13 +520,13 @@ inheritance.</p>
     
 
                             </div>
-                            <div id="Response.mask" class="classattr">
+                            <div id="Response.metadata" class="classattr">
                                 <div class="attr variable">
-            <span class="name">mask</span><span class="annotation">: list[bool]</span>
+            <span class="name">metadata</span><span class="annotation">: dict[str, typing.Any]</span>
 
         
     </div>
-    <a class="headerlink" href="#Response.mask"></a>
+    <a class="headerlink" href="#Response.metadata"></a>
     
     
 
@@ -460,8 +534,7 @@ inheritance.</p>
                             <div id="Response.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="Response.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="Response.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>
@@ -477,7 +550,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">BatchedRequest</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">BatchedRequest</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -501,8 +574,7 @@ inheritance.</p>
                             <div id="BatchedRequest.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="BatchedRequest.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="BatchedRequest.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>
@@ -518,7 +590,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">BatchedResponse</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">BatchedResponse</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -542,8 +614,7 @@ inheritance.</p>
                             <div id="BatchedResponse.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="BatchedResponse.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="BatchedResponse.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>
@@ -559,7 +630,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">ServerInfo</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">ServerInfo</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -605,8 +676,7 @@ inheritance.</p>
                             <div id="ServerInfo.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="ServerInfo.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="ServerInfo.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>
@@ -622,7 +692,7 @@ inheritance.</p>
                     <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Turn</span><wbr>(<span class="base">adaptive_sdk.external.base_model.BaseModel</span>):
+    <span class="name">Turn</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
 
         
     </div>
@@ -657,8 +727,7 @@ inheritance.</p>
                             <div id="Turn.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
-<input id="Turn.model_config-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="Turn.model_config-view-value"></label><span class="default_value">{&#39;populate_by_name&#39;: True, &#39;validate_assignment&#39;: True, &#39;arbitrary_types_allowed&#39;: True, &#39;protected_namespaces&#39;: ()}</span>
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
 
         
     </div>

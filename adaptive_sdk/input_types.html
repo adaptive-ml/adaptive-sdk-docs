@@ -184,18 +184,6 @@
 
             </li>
             <li>
-                    <a class="class" href="#EvaluationDatasource">EvaluationDatasource</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="variable" href="#EvaluationDatasource.dataset">dataset</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#EvaluationDatasource.completions">completions</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
                     <a class="class" href="#EvaluationDatasourceCompletions">EvaluationDatasourceCompletions</a>
                             <ul class="memberlist">
                         <li>
@@ -227,6 +215,18 @@
                         </li>
                         <li>
                                 <a class="variable" href="#GuidelinesTrainingParamsInput.judge_model_prompt">judge_model_prompt</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#GrpotrainingParamsInput">GrpotrainingParamsInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#GrpotrainingParamsInput.kl_div_coeff">kl_div_coeff</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrpotrainingParamsInput.steps">steps</a>
                         </li>
                 </ul>
 
@@ -307,6 +307,21 @@
 
             </li>
             <li>
+                    <a class="class" href="#ModelComputeConfigInput">ModelComputeConfigInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ModelComputeConfigInput.tp">tp</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelComputeConfigInput.kv_cache_len">kv_cache_len</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelComputeConfigInput.max_seq_len">max_seq_len</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#ModelFilter">ModelFilter</a>
                             <ul class="memberlist">
                         <li>
@@ -331,10 +346,25 @@
 
             </li>
             <li>
+                    <a class="class" href="#ModelPlacementInput">ModelPlacementInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ModelPlacementInput.compute_pools">compute_pools</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ModelPlacementInput.max_ttft_ms">max_ttft_ms</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#PpotrainingParamsInput">PpotrainingParamsInput</a>
                             <ul class="memberlist">
                         <li>
                                 <a class="variable" href="#PpotrainingParamsInput.kl_div_coeff">kl_div_coeff</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PpotrainingParamsInput.steps">steps</a>
                         </li>
                 </ul>
 
@@ -374,6 +404,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#SampleDatasourceCompletions.filter">filter</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#SampleDatasourceCompletions.replay_interactions">replay_interactions</a>
                         </li>
                 </ul>
 
@@ -453,6 +486,9 @@
                         <li>
                                 <a class="variable" href="#TrainingMetadataInputParameters.ppo">ppo</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#TrainingMetadataInputParameters.grpo">grpo</a>
+                        </li>
                 </ul>
 
             </li>
@@ -467,6 +503,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#TrainingObjectiveInput.sft">sft</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#TrainingObjectiveInput.reward_server">reward_server</a>
                         </li>
                 </ul>
 
@@ -1012,50 +1051,6 @@
 
                             </div>
                 </section>
-                <section id="EvaluationDatasource">
-                    <div class="attr class">
-            
-    <span class="def">class</span>
-    <span class="name">EvaluationDatasource</span><wbr>(<span class="base">typing.TypedDict</span>):
-
-        
-    </div>
-    <a class="headerlink" href="#EvaluationDatasource"></a>
-    
-            <div class="docstring"><p>Datasource selection for evaluation.</p>
-
-<h6 id="arguments">Arguments:</h6>
-
-<ul>
-<li><strong>dataset:</strong>  Key of previously uploaded file dataset.</li>
-<li><strong>completions:</strong>  Selection config for completions from the interaction store.</li>
-</ul>
-</div>
-
-
-                            <div id="EvaluationDatasource.dataset" class="classattr">
-                                <div class="attr variable">
-            <span class="name">dataset</span><span class="annotation">: typing_extensions.NotRequired[str]</span>
-
-        
-    </div>
-    <a class="headerlink" href="#EvaluationDatasource.dataset"></a>
-    
-    
-
-                            </div>
-                            <div id="EvaluationDatasource.completions" class="classattr">
-                                <div class="attr variable">
-            <span class="name">completions</span><span class="annotation">: typing_extensions.NotRequired[<a href="#EvaluationDatasourceCompletions">EvaluationDatasourceCompletions</a>]</span>
-
-        
-    </div>
-    <a class="headerlink" href="#EvaluationDatasource.completions"></a>
-    
-    
-
-                            </div>
-                </section>
                 <section id="EvaluationDatasourceCompletions">
                     <div class="attr class">
             
@@ -1162,6 +1157,41 @@
         
     </div>
     <a class="headerlink" href="#GuidelinesTrainingParamsInput.judge_model_prompt"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="GrpotrainingParamsInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">GrpotrainingParamsInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#GrpotrainingParamsInput"></a>
+    
+    
+
+                            <div id="GrpotrainingParamsInput.kl_div_coeff" class="classattr">
+                                <div class="attr variable">
+            <span class="name">kl_div_coeff</span><span class="annotation">: typing_extensions.Required[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GrpotrainingParamsInput.kl_div_coeff"></a>
+    
+    
+
+                            </div>
+                            <div id="GrpotrainingParamsInput.steps" class="classattr">
+                                <div class="attr variable">
+            <span class="name">steps</span><span class="annotation">: typing_extensions.Required[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GrpotrainingParamsInput.steps"></a>
     
     
 
@@ -1431,6 +1461,52 @@
 
                             </div>
                 </section>
+                <section id="ModelComputeConfigInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ModelComputeConfigInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ModelComputeConfigInput"></a>
+    
+    
+
+                            <div id="ModelComputeConfigInput.tp" class="classattr">
+                                <div class="attr variable">
+            <span class="name">tp</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelComputeConfigInput.tp"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelComputeConfigInput.kv_cache_len" class="classattr">
+                                <div class="attr variable">
+            <span class="name">kv_cache_len</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelComputeConfigInput.kv_cache_len"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelComputeConfigInput.max_seq_len" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_seq_len</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelComputeConfigInput.max_seq_len"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="ModelFilter">
                     <div class="attr class">
             
@@ -1510,6 +1586,41 @@
 
                             </div>
                 </section>
+                <section id="ModelPlacementInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ModelPlacementInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ModelPlacementInput"></a>
+    
+    
+
+                            <div id="ModelPlacementInput.compute_pools" class="classattr">
+                                <div class="attr variable">
+            <span class="name">compute_pools</span><span class="annotation">: typing_extensions.Required[typing.List[str]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelPlacementInput.compute_pools"></a>
+    
+    
+
+                            </div>
+                            <div id="ModelPlacementInput.max_ttft_ms" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_ttft_ms</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ModelPlacementInput.max_ttft_ms"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="PpotrainingParamsInput">
                     <div class="attr class">
             
@@ -1529,6 +1640,17 @@
         
     </div>
     <a class="headerlink" href="#PpotrainingParamsInput.kl_div_coeff"></a>
+    
+    
+
+                            </div>
+                            <div id="PpotrainingParamsInput.steps" class="classattr">
+                                <div class="attr variable">
+            <span class="name">steps</span><span class="annotation">: typing_extensions.Required[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#PpotrainingParamsInput.steps"></a>
     
     
 
@@ -1645,6 +1767,17 @@
         
     </div>
     <a class="headerlink" href="#SampleDatasourceCompletions.filter"></a>
+    
+    
+
+                            </div>
+                            <div id="SampleDatasourceCompletions.replay_interactions" class="classattr">
+                                <div class="attr variable">
+            <span class="name">replay_interactions</span><span class="annotation">: typing_extensions.NotRequired[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#SampleDatasourceCompletions.replay_interactions"></a>
     
     
 
@@ -1826,7 +1959,7 @@
                             </div>
                             <div id="TrainingMetadataInput.alignment_method" class="classattr">
                                 <div class="attr variable">
-            <span class="name">alignment_method</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PPO&#39;, &#39;DPO&#39;, &#39;SFT&#39;]]</span>
+            <span class="name">alignment_method</span><span class="annotation">: typing_extensions.Required[typing.Literal[&#39;PPO&#39;, &#39;DPO&#39;, &#39;SFT&#39;, &#39;GRPO&#39;]]</span>
 
         
     </div>
@@ -1881,6 +2014,17 @@
     
 
                             </div>
+                            <div id="TrainingMetadataInputParameters.grpo" class="classattr">
+                                <div class="attr variable">
+            <span class="name">grpo</span><span class="annotation">: typing_extensions.NotRequired[<a href="#GrpotrainingParamsInput">GrpotrainingParamsInput</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingMetadataInputParameters.grpo"></a>
+    
+    
+
+                            </div>
                 </section>
                 <section id="TrainingObjectiveInput">
                     <div class="attr class">
@@ -1923,6 +2067,17 @@
         
     </div>
     <a class="headerlink" href="#TrainingObjectiveInput.sft"></a>
+    
+    
+
+                            </div>
+                            <div id="TrainingObjectiveInput.reward_server" class="classattr">
+                                <div class="attr variable">
+            <span class="name">reward_server</span><span class="annotation">: typing_extensions.NotRequired[adaptive_sdk.input_types.typed_dicts.RewardServerInput]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#TrainingObjectiveInput.reward_server"></a>
     
     
 
