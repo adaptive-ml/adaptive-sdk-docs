@@ -196,6 +196,24 @@
 
             </li>
             <li>
+                    <a class="class" href="#GenerateParameters">GenerateParameters</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#GenerateParameters.stop">stop</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GenerateParameters.max_tokens">max_tokens</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GenerateParameters.temperature">temperature</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GenerateParameters.top_p">top_p</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#GuidelineInput">GuidelineInput</a>
                             <ul class="memberlist">
                         <li>
@@ -281,6 +299,24 @@
                         </li>
                         <li>
                                 <a class="variable" href="#InteractionFeedbackDict.details">details</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#JudgeExampleInput">JudgeExampleInput</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#JudgeExampleInput.input">input</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#JudgeExampleInput.output">output</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#JudgeExampleInput.passes">passes</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#JudgeExampleInput.reasoning">reasoning</a>
                         </li>
                 </ul>
 
@@ -499,7 +535,7 @@
                                 <a class="variable" href="#TrainingObjectiveInput.metric">metric</a>
                         </li>
                         <li>
-                                <a class="variable" href="#TrainingObjectiveInput.guidelines">guidelines</a>
+                                <a class="variable" href="#TrainingObjectiveInput.judges">judges</a>
                         </li>
                         <li>
                                 <a class="variable" href="#TrainingObjectiveInput.sft">sft</a>
@@ -1092,6 +1128,63 @@
 
                             </div>
                 </section>
+                <section id="GenerateParameters">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">GenerateParameters</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#GenerateParameters"></a>
+    
+    
+
+                            <div id="GenerateParameters.stop" class="classattr">
+                                <div class="attr variable">
+            <span class="name">stop</span><span class="annotation">: typing_extensions.NotRequired[typing.List[str]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GenerateParameters.stop"></a>
+    
+    
+
+                            </div>
+                            <div id="GenerateParameters.max_tokens" class="classattr">
+                                <div class="attr variable">
+            <span class="name">max_tokens</span><span class="annotation">: typing_extensions.NotRequired[int]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GenerateParameters.max_tokens"></a>
+    
+    
+
+                            </div>
+                            <div id="GenerateParameters.temperature" class="classattr">
+                                <div class="attr variable">
+            <span class="name">temperature</span><span class="annotation">: typing_extensions.NotRequired[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GenerateParameters.temperature"></a>
+    
+    
+
+                            </div>
+                            <div id="GenerateParameters.top_p" class="classattr">
+                                <div class="attr variable">
+            <span class="name">top_p</span><span class="annotation">: typing_extensions.NotRequired[float]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#GenerateParameters.top_p"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="GuidelineInput">
                     <div class="attr class">
             
@@ -1397,6 +1490,74 @@
         
     </div>
     <a class="headerlink" href="#InteractionFeedbackDict.details"></a>
+    
+    
+
+                            </div>
+                </section>
+                <section id="JudgeExampleInput">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">JudgeExampleInput</span><wbr>(<span class="base">typing.TypedDict</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#JudgeExampleInput"></a>
+    
+            <div class="docstring"><p>Example to guide an AI judge's reasoning when evaluating a completion (few-shot prompting).</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>input:</strong>  Ordered list of chat messages (role/content) that form the conversation context.</li>
+<li><strong>output:</strong>  Assistant completion to be evaluated.</li>
+<li><strong>passes:</strong>  Boolean indicating whether the <em>output</em> satisfies the criteria.</li>
+<li><strong>reasoning:</strong>  Optional free-text with the rationale behind the decision.</li>
+</ul>
+</div>
+
+
+                            <div id="JudgeExampleInput.input" class="classattr">
+                                <div class="attr variable">
+            <span class="name">input</span><span class="annotation">: typing_extensions.Required[typing.List[<a href="#ChatMessage">ChatMessage</a>]]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JudgeExampleInput.input"></a>
+    
+    
+
+                            </div>
+                            <div id="JudgeExampleInput.output" class="classattr">
+                                <div class="attr variable">
+            <span class="name">output</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JudgeExampleInput.output"></a>
+    
+    
+
+                            </div>
+                            <div id="JudgeExampleInput.passes" class="classattr">
+                                <div class="attr variable">
+            <span class="name">passes</span><span class="annotation">: typing_extensions.Required[bool]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JudgeExampleInput.passes"></a>
+    
+    
+
+                            </div>
+                            <div id="JudgeExampleInput.reasoning" class="classattr">
+                                <div class="attr variable">
+            <span class="name">reasoning</span><span class="annotation">: typing_extensions.Required[str]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#JudgeExampleInput.reasoning"></a>
     
     
 
@@ -2049,13 +2210,13 @@
     
 
                             </div>
-                            <div id="TrainingObjectiveInput.guidelines" class="classattr">
+                            <div id="TrainingObjectiveInput.judges" class="classattr">
                                 <div class="attr variable">
-            <span class="name">guidelines</span><span class="annotation">: typing_extensions.NotRequired[<a href="#GuidelinesTrainingParamsInput">GuidelinesTrainingParamsInput</a>]</span>
+            <span class="name">judges</span><span class="annotation">: typing_extensions.NotRequired[adaptive_sdk.input_types.typed_dicts.JudgeTrainingParamsInput]</span>
 
         
     </div>
-    <a class="headerlink" href="#TrainingObjectiveInput.guidelines"></a>
+    <a class="headerlink" href="#TrainingObjectiveInput.judges"></a>
     
     
 

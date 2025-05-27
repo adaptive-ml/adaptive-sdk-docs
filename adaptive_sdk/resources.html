@@ -223,6 +223,33 @@
 
             </li>
             <li>
+                    <a class="class" href="#Judges">Judges</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#Judges.__init__">Judges</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.create">create</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.update">update</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.delete">delete</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.list_versions">list_versions</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Judges.get">get</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#Models">Models</a>
                             <ul class="memberlist">
                         <li>
@@ -581,6 +608,33 @@
                         </li>
                         <li>
                                 <a class="function" href="#AsyncInteractions.get">get</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#AsyncJudges">AsyncJudges</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#AsyncJudges.__init__">AsyncJudges</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.create">create</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.update">update</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.delete">delete</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.list_versions">list_versions</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncJudges.get">get</a>
                         </li>
                 </ul>
 
@@ -1103,7 +1157,7 @@ for chunk in stream_response:
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -1327,7 +1381,7 @@ Request will error if default model is not an embedding model.</li>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">input_types</span><span class="o">.</span><span class="n">typed_dicts</span><span class="o">.</span><span class="n">GenerateParameters</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n"><a href="input_types.html#GenerateParameters">adaptive_sdk.input_types.GenerateParameters</a></span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
 
         
     </div>
@@ -1653,7 +1707,7 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">completion</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">messages</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#ChatMessage">adaptive_sdk.input_types.ChatMessage</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedbacks</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#InteractionFeedbackDict">adaptive_sdk.input_types.InteractionFeedbackDict</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">user</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">ab_campaign</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">labels</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">created_at</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="rest.html#AddInteractionsResponse">adaptive_sdk.rest.AddInteractionsResponse</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">completion</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">messages</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#ChatMessage">adaptive_sdk.input_types.ChatMessage</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedbacks</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#InteractionFeedbackDict">adaptive_sdk.input_types.InteractionFeedbackDict</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">user</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">ab_campaign</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">labels</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">created_at</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="rest.html#AddInteractionsResponse">adaptive_sdk.rest.AddInteractionsResponse</a></span>:</span></span>
 
         
     </div>
@@ -1719,6 +1773,141 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
 <ul>
 <li><strong>completion_id:</strong>  The ID of the completion.</li>
 </ul>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="Judges">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">Judges</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.SyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#Judges"></a>
+    
+            <div class="docstring"><p>Resource to interact with Judge definitions used to evaluate model completions.</p>
+</div>
+
+
+                            <div id="Judges.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">Judges</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#Adaptive">adaptive_sdk.Adaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="Judges.create" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">criteria</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">examples</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#JudgeExampleInput">adaptive_sdk.input_types.JudgeExampleInput</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedback_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.create"></a>
+    
+            <div class="docstring"><p>Create a new custom Judge.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>criteria:</strong>  Natural-language explanation of what should be verified in the completion to be considered a <em>pass</em> for this judge.</li>
+<li><strong>judge_model:</strong>  Model key of the judge model.</li>
+<li><strong>key:</strong>  Unique key for the judge.</li>
+<li><strong>examples:</strong>  List of annotated examples used in few-shot prompting for the judge.
+Each example is a <code>dict</code> with:
+• <code>input</code>: list of <code>{"role": str, "content": str}</code> messages
+• <code>output</code>: the assistant response
+• <code>passes</code>: bool indicating if the output meets the criteria
+• <code>reasoning</code> (optional): explanation of the decision</li>
+<li><strong>name:</strong>  Human-readable judge name; if omitted, the key will be used.</li>
+<li><strong>feedback_key:</strong>  Optional feedback key this judge will write feedback to. If omitted, the judge key will be used.</li>
+<li><strong>use_case:</strong>  Explicit use-case key. Falls back to <code>client.default_use_case</code> when omitted.</li>
+</ul>
+</div>
+
+
+                            </div>
+                            <div id="Judges.update" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">update</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">criteria</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">examples</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#JudgeExampleInput">adaptive_sdk.input_types.JudgeExampleInput</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.update"></a>
+    
+            <div class="docstring"><p>Update an existing Judge version.
+Any field set to <code>None</code> will be left unchanged.</p>
+</div>
+
+
+                            </div>
+                            <div id="Judges.delete" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">delete</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">*</span>, </span><span class="param"><span class="n">key</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.delete"></a>
+    
+            <div class="docstring"><p>Delete a Judge. Returns <code>True</code> on success.</p>
+</div>
+
+
+                            </div>
+                            <div id="Judges.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">list</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.list"></a>
+    
+            <div class="docstring"><p>List all Judges for the given use case.</p>
+</div>
+
+
+                            </div>
+                            <div id="Judges.list_versions" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">list_versions</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.list_versions"></a>
+    
+            <div class="docstring"><p>List all historical versions of a Judge key.</p>
+</div>
+
+
+                            </div>
+                            <div id="Judges.get" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">version</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Judges.get"></a>
+    
+            <div class="docstring"><p>Retrieve a specific Judge by key (optionally specifying version).</p>
 </div>
 
 
@@ -2834,7 +3023,7 @@ async def async_chat_stream():
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -3053,7 +3242,7 @@ Request will error if default model is not an embedding model.</li>
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">input_types</span><span class="o">.</span><span class="n">typed_dicts</span><span class="o">.</span><span class="n">GenerateParameters</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n"><a href="input_types.html#GenerateParameters">adaptive_sdk.input_types.GenerateParameters</a></span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
 
         
     </div>
@@ -3376,7 +3565,7 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">completion</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">messages</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#ChatMessage">adaptive_sdk.input_types.ChatMessage</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedbacks</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#InteractionFeedbackDict">adaptive_sdk.input_types.InteractionFeedbackDict</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">user</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">ab_campaign</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">labels</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="rest.html#AddInteractionsResponse">adaptive_sdk.rest.AddInteractionsResponse</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">completion</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">messages</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#ChatMessage">adaptive_sdk.input_types.ChatMessage</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedbacks</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#InteractionFeedbackDict">adaptive_sdk.input_types.InteractionFeedbackDict</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">user</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">session_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">uuid</span><span class="o">.</span><span class="n">UUID</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">ab_campaign</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">labels</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="rest.html#AddInteractionsResponse">adaptive_sdk.rest.AddInteractionsResponse</a></span>:</span></span>
 
         
     </div>
@@ -3444,6 +3633,111 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
 </ul>
 </div>
 
+
+                            </div>
+                </section>
+                <section id="AsyncJudges">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">AsyncJudges</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.AsyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges"></a>
+    
+            <div class="docstring"><p>Asynchronous resource to interact with Judge definitions used to evaluate model completions.</p>
+</div>
+
+
+                            <div id="AsyncJudges.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">AsyncJudges</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#AsyncAdaptive">adaptive_sdk.AsyncAdaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.create" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">criteria</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">examples</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#JudgeExampleInput">adaptive_sdk.input_types.JudgeExampleInput</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">feedback_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.create"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.update" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">update</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">criteria</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">examples</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n"><a href="input_types.html#JudgeExampleInput">adaptive_sdk.input_types.JudgeExampleInput</a></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.update"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.delete" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">delete</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span>, </span><span class="param"><span class="o">*</span>, </span><span class="param"><span class="n">key</span><span class="p">:</span> <span class="nb">str</span>, </span><span class="param"><span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="nb">bool</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.delete"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">list</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.list"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.list_versions" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">list_versions</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.list_versions"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncJudges.get" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="o">*</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">version</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#JudgeData">adaptive_sdk.graphql_client.JudgeData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncJudges.get"></a>
+    
+    
 
                             </div>
                 </section>
