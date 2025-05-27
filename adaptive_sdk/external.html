@@ -37,6 +37,15 @@
                                 <a class="function" href="#RewardClient.__init__">RewardClient</a>
                         </li>
                         <li>
+                                <a class="variable" href="#RewardClient.base_url">base_url</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RewardClient.use_websocket">use_websocket</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#RewardClient.connect_websocket">connect_websocket</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#RewardClient.score">score</a>
                         </li>
                         <li>
@@ -94,6 +103,33 @@
 
             </li>
             <li>
+                    <a class="class" href="#EmptyMetadata">EmptyMetadata</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#EmptyMetadata.model_config">model_config</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
+                    <a class="class" href="#ValidatedRequest">ValidatedRequest</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="variable" href="#ValidatedRequest.turns">turns</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ValidatedRequest.metadata">metadata</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#ValidatedRequest.id">id</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#ValidatedRequest.intercept_none_metadata">intercept_none_metadata</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#Request">Request</a>
                             <ul class="memberlist">
                         <li>
@@ -101,6 +137,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#Request.metadata">metadata</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Request.id">id</a>
                         </li>
                         <li>
                                 <a class="variable" href="#Request.model_config">model_config</a>
@@ -116,6 +155,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#Response.metadata">metadata</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#Response.id">id</a>
                         </li>
                         <li>
                                 <a class="variable" href="#Response.model_config">model_config</a>
@@ -216,11 +258,46 @@
                             <div id="RewardClient.__init__" class="classattr">
                                 <div class="attr function">
             
-        <span class="name">RewardClient</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">base_url</span>, </span><span class="param"><span class="n">max_connections</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span>, </span><span class="param"><span class="n">timeout</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
+        <span class="name">RewardClient</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">max_connections</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span>,</span><span class="param">	<span class="n">timeout</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span>)</span>
 
         
     </div>
     <a class="headerlink" href="#RewardClient.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardClient.base_url" class="classattr">
+                                <div class="attr variable">
+            <span class="name">base_url</span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.base_url"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardClient.use_websocket" class="classattr">
+                                <div class="attr variable">
+            <span class="name">use_websocket</span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.use_websocket"></a>
+    
+    
+
+                            </div>
+                            <div id="RewardClient.connect_websocket" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">connect_websocket</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#RewardClient.connect_websocket"></a>
     
     
 
@@ -394,7 +471,7 @@ inheritance.</p>
                     <div class="decorator decorator-abstractmethod">@abstractmethod</div>
 
         <span class="def">async def</span>
-        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">request</span><span class="p">:</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">external</span><span class="o">.</span><span class="n">reward_types</span><span class="o">.</span><span class="n">ValidatedRequest</span><span class="p">[</span><span class="o">~</span><span class="n">META</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
+        <span class="name">score</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">request</span><span class="p">:</span> <span class="n"><a href="#ValidatedRequest">ValidatedRequest</a></span><span class="p">[</span><span class="o">~</span><span class="n">META</span><span class="p">]</span></span><span class="return-annotation">) -> <span class="n"><a href="#Response">Response</a></span>:</span></span>
 
         
     </div>
@@ -444,6 +521,126 @@ inheritance.</p>
 
                             </div>
                 </section>
+                <section id="EmptyMetadata">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">EmptyMetadata</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#EmptyMetadata"></a>
+    
+            <div class="docstring"><p>Usage docs: <a href="https://docs.pydantic.dev/2.10/concepts/models/">https://docs.pydantic.dev/2.10/concepts/models/</a></p>
+
+<p>A base class for creating Pydantic models.</p>
+
+<h6 id="attributes">Attributes:</h6>
+
+<ul>
+<li><strong>__class_vars__:</strong>  The names of the class variables defined on the model.</li>
+<li><strong>__private_attributes__:</strong>  Metadata about the private attributes of the model.</li>
+<li><strong>__signature__:</strong>  The synthesized <code><a href="#EmptyMetadata.__init__">__init__</a></code> [<code>Signature</code>][inspect.Signature] of the model.</li>
+<li><strong>__pydantic_complete__:</strong>  Whether model building is completed, or if there are still undefined fields.</li>
+<li><strong>__pydantic_core_schema__:</strong>  The core schema of the model.</li>
+<li><strong>__pydantic_custom_init__:</strong>  Whether the model has a custom <code><a href="#EmptyMetadata.__init__">__init__</a></code> function.</li>
+<li><strong>__pydantic_decorators__:</strong>  Metadata containing the decorators defined on the model.
+This replaces <code>Model.__validators__</code> and <code>Model.__root_validators__</code> from Pydantic V1.</li>
+<li><strong>__pydantic_generic_metadata__:</strong>  Metadata for generic models; contains data used for a similar purpose to
+__args__, __origin__, __parameters__ in typing-module generics. May eventually be replaced by these.</li>
+<li><strong>__pydantic_parent_namespace__:</strong>  Parent namespace of the model, used for automatic rebuilding of models.</li>
+<li><strong>__pydantic_post_init__:</strong>  The name of the post-init method for the model, if defined.</li>
+<li><strong>__pydantic_root_model__:</strong>  Whether the model is a [<code>RootModel</code>][pydantic.root_model.RootModel].</li>
+<li><strong>__pydantic_serializer__:</strong>  The <code>pydantic-core</code> <code>SchemaSerializer</code> used to dump instances of the model.</li>
+<li><strong>__pydantic_validator__:</strong>  The <code>pydantic-core</code> <code>SchemaValidator</code> used to validate instances of the model.</li>
+<li><strong>__pydantic_fields__:</strong>  A dictionary of field names and their corresponding [<code>FieldInfo</code>][pydantic.fields.FieldInfo] objects.</li>
+<li><strong>__pydantic_computed_fields__:</strong>  A dictionary of computed field names and their corresponding [<code>ComputedFieldInfo</code>][pydantic.fields.ComputedFieldInfo] objects.</li>
+<li><strong>__pydantic_extra__:</strong>  A dictionary containing extra values, if [<code>extra</code>][pydantic.config.ConfigDict.extra]
+is set to <code>'allow'</code>.</li>
+<li><strong>__pydantic_fields_set__:</strong>  The names of fields explicitly set during instantiation.</li>
+<li><strong>__pydantic_private__:</strong>  Values of private attributes set on the model instance.</li>
+</ul>
+</div>
+
+
+                            <div id="EmptyMetadata.model_config" class="classattr">
+                                <div class="attr variable">
+            <span class="name">model_config</span>        =
+<span class="default_value">{&#39;extra&#39;: &#39;forbid&#39;}</span>
+
+        
+    </div>
+    <a class="headerlink" href="#EmptyMetadata.model_config"></a>
+    
+            <div class="docstring"><p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+</div>
+
+
+                            </div>
+                </section>
+                <section id="ValidatedRequest">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">ValidatedRequest</span><wbr>(<span class="base">adaptive_sdk.external.reward_types.BaseModel</span>, <span class="base">typing.Generic[~MetadataType]</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#ValidatedRequest"></a>
+    
+            <div class="docstring"><p></p>
+</div>
+
+
+                            <div id="ValidatedRequest.turns" class="classattr">
+                                <div class="attr variable">
+            <span class="name">turns</span><span class="annotation">: list[<a href="#Turn">Turn</a>]</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ValidatedRequest.turns"></a>
+    
+    
+
+                            </div>
+                            <div id="ValidatedRequest.metadata" class="classattr">
+                                <div class="attr variable">
+            <span class="name">metadata</span><span class="annotation">: ~MetadataType</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ValidatedRequest.metadata"></a>
+    
+    
+
+                            </div>
+                            <div id="ValidatedRequest.id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">id</span><span class="annotation">: int | None</span>
+
+        
+    </div>
+    <a class="headerlink" href="#ValidatedRequest.id"></a>
+    
+    
+
+                            </div>
+                            <div id="ValidatedRequest.intercept_none_metadata" class="classattr">
+                                <div class="attr function">
+                    <div class="decorator decorator-model_validator">@model_validator(mode=&#39;before&#39;)</div>
+        <div class="decorator decorator-classmethod">@classmethod</div>
+
+        <span class="def">def</span>
+        <span class="name">intercept_none_metadata</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">cls</span>, </span><span class="param"><span class="n">data</span><span class="p">:</span> <span class="n">Any</span></span><span class="return-annotation">) -> <span class="n">Any</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#ValidatedRequest.intercept_none_metadata"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="Request">
                     <div class="attr class">
             
@@ -480,6 +677,17 @@ inheritance.</p>
     
 
                             </div>
+                            <div id="Request.id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">id</span><span class="annotation">: int | None</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Request.id"></a>
+    
+    
+
+                            </div>
                             <div id="Request.model_config" class="classattr">
                                 <div class="attr variable">
             <span class="name">model_config</span>        =
@@ -511,7 +719,7 @@ inheritance.</p>
 
                             <div id="Response.reward" class="classattr">
                                 <div class="attr variable">
-            <span class="name">reward</span><span class="annotation">: float</span>
+            <span class="name">reward</span><span class="annotation">: float | list[float]</span>
 
         
     </div>
@@ -527,6 +735,17 @@ inheritance.</p>
         
     </div>
     <a class="headerlink" href="#Response.metadata"></a>
+    
+    
+
+                            </div>
+                            <div id="Response.id" class="classattr">
+                                <div class="attr variable">
+            <span class="name">id</span><span class="annotation">: int | None</span>
+
+        
+    </div>
+    <a class="headerlink" href="#Response.id"></a>
     
     
 

@@ -88,6 +88,24 @@
 
             </li>
             <li>
+                    <a class="class" href="#CustomRecipes">CustomRecipes</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#CustomRecipes.__init__">CustomRecipes</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#CustomRecipes.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#CustomRecipes.upload">upload</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#CustomRecipes.run_training_recipe">run_training_recipe</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#Datasets">Datasets</a>
                             <ul class="memberlist">
                         <li>
@@ -101,6 +119,9 @@
                         </li>
                         <li>
                                 <a class="function" href="#Datasets.get">get</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#Datasets.generate">generate</a>
                         </li>
                 </ul>
 
@@ -430,6 +451,24 @@
 
             </li>
             <li>
+                    <a class="class" href="#AsyncCustomRecipes">AsyncCustomRecipes</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#AsyncCustomRecipes.__init__">AsyncCustomRecipes</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncCustomRecipes.list">list</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncCustomRecipes.upload">upload</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncCustomRecipes.run_training_recipe">run_training_recipe</a>
+                        </li>
+                </ul>
+
+            </li>
+            <li>
                     <a class="class" href="#AsyncDatasets">AsyncDatasets</a>
                             <ul class="memberlist">
                         <li>
@@ -443,6 +482,9 @@
                         </li>
                         <li>
                                 <a class="function" href="#AsyncDatasets.get">get</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#AsyncDatasets.generate">generate</a>
                         </li>
                 </ul>
 
@@ -1005,6 +1047,72 @@ for chunk in stream_response:
 
                             </div>
                 </section>
+                <section id="CustomRecipes">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">CustomRecipes</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.SyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipes"></a>
+    
+            <div class="docstring"><p>Resource to interact with custom scripts.</p>
+</div>
+
+
+                            <div id="CustomRecipes.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">CustomRecipes</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#Adaptive">adaptive_sdk.Adaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipes.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="CustomRecipes.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#CustomScriptData">adaptive_sdk.graphql_client.CustomScriptData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipes.list"></a>
+    
+    
+
+                            </div>
+                            <div id="CustomRecipes.upload" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">upload</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">custom_script_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CustomScriptData">adaptive_sdk.graphql_client.CustomScriptData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipes.upload"></a>
+    
+    
+
+                            </div>
+                            <div id="CustomRecipes.run_training_recipe" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#CustomRecipes.run_training_recipe"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="Datasets">
                     <div class="attr class">
             
@@ -1078,7 +1186,7 @@ for chunk in stream_response:
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DescribeDatasetDataset">adaptive_sdk.graphql_client.DescribeDatasetDataset</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DatasetData">adaptive_sdk.graphql_client.DatasetData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -1090,6 +1198,35 @@ for chunk in stream_response:
 
 <ul>
 <li><strong>key:</strong>  Dataset key.</li>
+</ul>
+</div>
+
+
+                            </div>
+                            <div id="Datasets.generate" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">generate</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset_type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;RAG&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;RAG&#39;</span>,</span><span class="param">	<span class="n">chunks_per_new_sample</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span>,</span><span class="param">	<span class="n">new_system_prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DatasetData">adaptive_sdk.graphql_client.DatasetData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#Datasets.generate"></a>
+    
+            <div class="docstring"><p>Generate a dataset from a file.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>model:</strong>  Model to use for data generation.</li>
+<li><strong>file_path:</strong>  Path to jsonl file.</li>
+<li><strong>dataset_key:</strong>  New dataset key.</li>
+<li><strong>dataset_type:</strong>  Type of dataset to generate.</li>
+<li><strong>chunks_per_new_sample:</strong>  Number of document chunks that will be included in each generated sample's prompt.</li>
+<li><strong>new_system_prompt:</strong>  Optional new system prompt to be prepended to all generated samples.</li>
+<li><strong>name:</strong>  Optional name to render in UI; if <code>None</code>, defaults to same as <code>dataset_key</code>.</li>
+<li><strong>use_case:</strong>  Use case to associate with the dataset.</li>
+<li><strong>compute_pool:</strong>  Compute pool to use for generation.</li>
 </ul>
 </div>
 
@@ -1190,7 +1327,7 @@ Request will error if default model is not an embedding model.</li>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleConfigInput">adaptive_sdk.input_types.SampleConfigInput</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">input_types</span><span class="o">.</span><span class="n">typed_dicts</span><span class="o">.</span><span class="n">GenerateParameters</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
 
         
     </div>
@@ -1201,12 +1338,18 @@ Request will error if default model is not an embedding model.</li>
 <h6 id="arguments">Arguments:</h6>
 
 <ul>
+<li><strong>data_source:</strong>  Source of data to evaluate on; either an uploaded dataset, or logged completions.</li>
 <li><strong>data_config:</strong>  Input data configuration.</li>
 <li><strong>models:</strong>  Models to evaluate.</li>
 <li><strong>judge_model:</strong>  Model key of judge.</li>
 <li><strong>method:</strong>  Eval method (built in method, or custom eval).</li>
-<li><strong>custom_eval_config:</strong>  Only required if method=="custom".</li>
+<li><strong>generation_params_per_model:</strong>  Optional list of models to evaluate with their parameters for generation.
+The list should contain tuples, where the first element is the model key, and the second element is the generation parameters.
+If a model is not present in the list, the default generation parameters will be used.</li>
+<li><strong>custom_eval_config:</strong>  Custom evaluation configuration. Only required if method=="custom".</li>
 <li><strong>name:</strong>  Optional name for evaluation job.</li>
+<li><strong>use_case:</strong>  Target use case to associate evaluation job with. Overrides client's default use case.</li>
+<li><strong>compute_pool:</strong>  Optional compute pool key where evaluation job will run on.</li>
 </ul>
 </div>
 
@@ -1611,7 +1754,7 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">add_hf_model</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">hf_model_id</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;google/gemma-2-2b&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="nb">str</span>:</span></span>
+        <span class="name">add_hf_model</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">hf_model_id</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;google/gemma-3-4b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;google/gemma-3-12b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;google/gemma-3-27b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.1-8B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.1-70B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.2-1B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.2-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.3-70B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;mistralai/Mistral-Small-24B-Instruct-2501&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-0.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-1.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-7B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-14B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-32B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-72B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-0.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-1.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-7B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-14B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-32B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-0.6B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-1.7B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-4B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-8B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-14B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-32B&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">output_model_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="nb">str</span>:</span></span>
 
         
     </div>
@@ -2125,7 +2268,7 @@ for the model to be terminated.</li>
                                 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="n"><a href="input_types.html#AdaptRequestConfigInput">adaptive_sdk.input_types.AdaptRequestConfigInput</a></span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CreateTrainingJobCreateTrainingJob">adaptive_sdk.graphql_client.CreateTrainingJobCreateTrainingJob</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">feedback_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DIRECT&#39;</span><span class="p">,</span> <span class="s1">&#39;PREFERENCE&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">parameter_efficient</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>,</span><span class="param">	<span class="n">alignment_method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;PPO&#39;</span><span class="p">,</span> <span class="s1">&#39;DPO&#39;</span><span class="p">,</span> <span class="s1">&#39;GRPO&#39;</span><span class="p">,</span> <span class="s1">&#39;SFT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;PPO&#39;</span>,</span><span class="param">	<span class="n">alignment_objective</span><span class="p">:</span> <span class="n"><a href="input_types.html#TrainingObjectiveInput">adaptive_sdk.input_types.TrainingObjectiveInput</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">alignment_params</span><span class="p">:</span> <span class="n"><a href="input_types.html#TrainingMetadataInputParameters">adaptive_sdk.input_types.TrainingMetadataInputParameters</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">base_training_params</span><span class="p">:</span> <span class="n"><a href="input_types.html#BaseTrainingParamsInput">adaptive_sdk.input_types.BaseTrainingParamsInput</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">job_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">output_model_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CreateTrainingJobCreateTrainingJob">adaptive_sdk.graphql_client.CreateTrainingJobCreateTrainingJob</a></span>:</span></span>
 
         
     </div>
@@ -2137,8 +2280,21 @@ for the model to be terminated.</li>
 
 <ul>
 <li><strong>model:</strong>  Model to train.</li>
-<li><strong>config:</strong>  Training config.</li>
-<li><strong>name:</strong>  Name for training job.</li>
+<li><strong>data_source:</strong>  Source of data to train on; either an uploaded dataset, or logged completions.</li>
+<li><strong>data_config:</strong>  Training data configuration.</li>
+<li><strong>feedback_type:</strong>  If training on <code>metric</code> training_objective usingcompletions that have both metric
+and preference feedback logged, you must specify which of those sets to train on.</li>
+<li><strong>parameter_efficient:</strong>  If <code>True</code>, training will be parameter-efficient, and the output model
+will be a lightweight adapter coupled to the selected backbone model.</li>
+<li><strong>aligment_method:</strong>  Alignment method selection.</li>
+<li><strong>alignment_objective:</strong>  Configuration for the training objective, determines the reward during training.</li>
+<li><strong>alignment_params:</strong>  Alignment method-specific hyperparameter configuration.</li>
+<li><strong>base_training_params:</strong>  Common training parameters.</li>
+<li><strong>job_name:</strong>  Human readable training job name.</li>
+<li><strong>output_model_name:</strong>  Name for resulting model.</li>
+<li><strong>wait:</strong>  If True, only returns when training is finished.</li>
+<li><strong>use_case:</strong>  Target use case to associate training job with.</li>
+<li><strong>compute_pool:</strong>  Compute pool where training job will run.</li>
 </ul>
 </div>
 
@@ -2622,6 +2778,72 @@ async def async_chat_stream():
 
                             </div>
                 </section>
+                <section id="AsyncCustomRecipes">
+                    <div class="attr class">
+            
+    <span class="def">class</span>
+    <span class="name">AsyncCustomRecipes</span><wbr>(<span class="base">adaptive_sdk.resources.base_resource.AsyncAPIResource</span>, <span class="base">adaptive_sdk.resources.base_resource.UseCaseResource</span>):
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncCustomRecipes"></a>
+    
+            <div class="docstring"><p>Resource to interact with custom scripts.</p>
+</div>
+
+
+                            <div id="AsyncCustomRecipes.__init__" class="classattr">
+                                <div class="attr function">
+            
+        <span class="name">AsyncCustomRecipes</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">client</span><span class="p">:</span> <span class="n"><a href="../adaptive_sdk.html#AsyncAdaptive">adaptive_sdk.AsyncAdaptive</a></span></span>)</span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncCustomRecipes.__init__"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncCustomRecipes.list" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">list</span><span class="signature pdoc-code condensed">(<span class="param"><span class="bp">self</span></span><span class="return-annotation">) -> <span class="n">Sequence</span><span class="p">[</span><span class="n"><a href="graphql_client.html#CustomScriptData">adaptive_sdk.graphql_client.CustomScriptData</a></span><span class="p">]</span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncCustomRecipes.list"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncCustomRecipes.upload" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">upload</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">custom_script_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CustomScriptData">adaptive_sdk.graphql_client.CustomScriptData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncCustomRecipes.upload"></a>
+    
+    
+
+                            </div>
+                            <div id="AsyncCustomRecipes.run_training_recipe" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">run_training_recipe</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">recipe_args</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncCustomRecipes.run_training_recipe"></a>
+    
+    
+
+                            </div>
+                </section>
                 <section id="AsyncDatasets">
                     <div class="attr class">
             
@@ -2693,7 +2915,7 @@ async def async_chat_stream():
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DescribeDatasetDataset">adaptive_sdk.graphql_client.DescribeDatasetDataset</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
+        <span class="name">get</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">key</span><span class="p">:</span> <span class="nb">str</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DatasetData">adaptive_sdk.graphql_client.DatasetData</a></span> <span class="o">|</span> <span class="kc">None</span>:</span></span>
 
         
     </div>
@@ -2705,6 +2927,35 @@ async def async_chat_stream():
 
 <ul>
 <li><strong>key:</strong>  Dataset key.</li>
+</ul>
+</div>
+
+
+                            </div>
+                            <div id="AsyncDatasets.generate" class="classattr">
+                                <div class="attr function">
+            
+        <span class="def">async def</span>
+        <span class="name">generate</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">dataset_type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;RAG&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;RAG&#39;</span>,</span><span class="param">	<span class="n">chunks_per_new_sample</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span>,</span><span class="param">	<span class="n">new_system_prompt</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#DatasetData">adaptive_sdk.graphql_client.DatasetData</a></span>:</span></span>
+
+        
+    </div>
+    <a class="headerlink" href="#AsyncDatasets.generate"></a>
+    
+            <div class="docstring"><p>Generate a dataset from a file.</p>
+
+<h6 id="arguments">Arguments:</h6>
+
+<ul>
+<li><strong>model:</strong>  Model to use for data generation.</li>
+<li><strong>file_path:</strong>  Path to jsonl file.</li>
+<li><strong>dataset_key:</strong>  New dataset key.</li>
+<li><strong>dataset_type:</strong>  Type of dataset to generate.</li>
+<li><strong>chunks_per_new_sample:</strong>  Number of document chunks that will be included in each generated sample's prompt.</li>
+<li><strong>new_system_prompt:</strong>  Optional new system prompt to be prepended to all generated samples.</li>
+<li><strong>name:</strong>  Optional name to render in UI; if <code>None</code>, defaults to same as <code>dataset_key</code>.</li>
+<li><strong>use_case:</strong>  Use case to associate with the dataset.</li>
+<li><strong>compute_pool:</strong>  Compute pool to use for generation.</li>
 </ul>
 </div>
 
@@ -2802,7 +3053,7 @@ Request will error if default model is not an embedding model.</li>
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleConfigInput">adaptive_sdk.input_types.SampleConfigInput</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">models</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>,</span><span class="param">	<span class="n">judge_model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">,</span> <span class="s1">&#39;answer_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;context_relevancy&#39;</span><span class="p">,</span> <span class="s1">&#39;faithfulness&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">generation_params_per_model</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">adaptive_sdk</span><span class="o">.</span><span class="n">input_types</span><span class="o">.</span><span class="n">typed_dicts</span><span class="o">.</span><span class="n">GenerateParameters</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">custom_eval_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#CustomRecipe">adaptive_sdk.input_types.CustomRecipe</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#EvaluationJobData">adaptive_sdk.graphql_client.EvaluationJobData</a></span>:</span></span>
 
         
     </div>
@@ -2813,12 +3064,18 @@ Request will error if default model is not an embedding model.</li>
 <h6 id="arguments">Arguments:</h6>
 
 <ul>
+<li><strong>data_source:</strong>  Source of data to evaluate on; either an uploaded dataset, or logged completions.</li>
 <li><strong>data_config:</strong>  Input data configuration.</li>
 <li><strong>models:</strong>  Models to evaluate.</li>
 <li><strong>judge_model:</strong>  Model key of judge.</li>
 <li><strong>method:</strong>  Eval method (built in method, or custom eval).</li>
-<li><strong>custom_eval_config:</strong>  Configuration for custom eval. Only required if method=="custom".</li>
+<li><strong>generation_params_per_model:</strong>  Optional list of models to evaluate with their parameters for generation.
+The list should contain tuples, where the first element is the model key, and the second element is the generation parameters.
+If a model is not present in the list, the default generation parameters will be used.</li>
+<li><strong>custom_eval_config:</strong>  Custom evaluation configuration. Only required if method=="custom".</li>
 <li><strong>name:</strong>  Optional name for evaluation job.</li>
+<li><strong>use_case:</strong>  Target use case to associate evaluation job with. Overrides client's default use case.</li>
+<li><strong>compute_pool:</strong>  Optional compute pool key where evaluation job will run on.</li>
 </ul>
 </div>
 
@@ -3220,7 +3477,7 @@ Ignored if <code>preferred_</code> and <code>other_completion</code> are complet
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">add_hf_model</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">hf_model_id</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
+        <span class="name">add_hf_model</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">hf_model_id</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;google/gemma-3-4b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;google/gemma-3-12b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;google/gemma-3-27b-it&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.1-8B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.1-70B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.2-1B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.2-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;meta-llama/Llama-3.3-70B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;mistralai/Mistral-Small-24B-Instruct-2501&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-0.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-1.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-7B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-14B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-32B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-72B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-0.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-1.5B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-3B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-7B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-14B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen2.5-Coder-32B-Instruct&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-0.6B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-1.7B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-4B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-8B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-14B&#39;</span><span class="p">,</span> <span class="s1">&#39;Qwen/Qwen3-32B&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">output_model_name</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">output_model_key</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">hf_token</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">):</span></span>
 
         
     </div>
@@ -3734,7 +3991,7 @@ for the model to be terminated.</li>
                                 <div class="attr function">
             
         <span class="def">async def</span>
-        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">config</span><span class="p">:</span> <span class="n"><a href="input_types.html#AdaptRequestConfigInput">adaptive_sdk.input_types.AdaptRequestConfigInput</a></span>,</span><span class="param">	<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CreateTrainingJobCreateTrainingJob">adaptive_sdk.graphql_client.CreateTrainingJobCreateTrainingJob</a></span>:</span></span>
+        <span class="name">create</span><span class="signature pdoc-code multiline">(<span class="param">	<span class="bp">self</span>,</span><span class="param">	<span class="n">model</span><span class="p">:</span> <span class="nb">str</span>,</span><span class="param">	<span class="n">data_source</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DATASET&#39;</span><span class="p">,</span> <span class="s1">&#39;COMPLETIONS&#39;</span><span class="p">]</span>,</span><span class="param">	<span class="n">data_config</span><span class="p">:</span> <span class="n"><a href="input_types.html#SampleDatasourceCompletions">adaptive_sdk.input_types.SampleDatasourceCompletions</a></span> <span class="o">|</span> <span class="n"><a href="input_types.html#SampleDatasourceDataset">adaptive_sdk.input_types.SampleDatasourceDataset</a></span>,</span><span class="param">	<span class="n">feedback_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;DIRECT&#39;</span><span class="p">,</span> <span class="s1">&#39;PREFERENCE&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">parameter_efficient</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>,</span><span class="param">	<span class="n">alignment_method</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;PPO&#39;</span><span class="p">,</span> <span class="s1">&#39;DPO&#39;</span><span class="p">,</span> <span class="s1">&#39;GRPO&#39;</span><span class="p">,</span> <span class="s1">&#39;SFT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;PPO&#39;</span>,</span><span class="param">	<span class="n">alignment_objective</span><span class="p">:</span> <span class="n"><a href="input_types.html#TrainingObjectiveInput">adaptive_sdk.input_types.TrainingObjectiveInput</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">alignment_params</span><span class="p">:</span> <span class="n"><a href="input_types.html#TrainingMetadataInputParameters">adaptive_sdk.input_types.TrainingMetadataInputParameters</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">base_training_params</span><span class="p">:</span> <span class="n"><a href="input_types.html#BaseTrainingParamsInput">adaptive_sdk.input_types.BaseTrainingParamsInput</a></span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">job_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">output_model_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">wait</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>,</span><span class="param">	<span class="n">use_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>,</span><span class="param">	<span class="n">compute_pool</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span></span><span class="return-annotation">) -> <span class="n"><a href="graphql_client.html#CreateTrainingJobCreateTrainingJob">adaptive_sdk.graphql_client.CreateTrainingJobCreateTrainingJob</a></span>:</span></span>
 
         
     </div>
@@ -3746,8 +4003,21 @@ for the model to be terminated.</li>
 
 <ul>
 <li><strong>model:</strong>  Model to train.</li>
-<li><strong>config:</strong>  Training config.</li>
-<li><strong>name:</strong>  Name for training job.</li>
+<li><strong>data_source:</strong>  Source of data to train on; either an uploaded dataset, or logged completions.</li>
+<li><strong>data_config:</strong>  Training data configuration.</li>
+<li><strong>feedback_type:</strong>  If training on <code>metric</code> training_objective usingcompletions that have both metric
+and preference feedback logged, you must specify which of those sets to train on.</li>
+<li><strong>parameter_efficient:</strong>  If <code>True</code>, training will be parameter-efficient, and the output model
+will be a lightweight adapter coupled to the selected backbone model.</li>
+<li><strong>aligment_method:</strong>  Alignment method selection.</li>
+<li><strong>alignment_objective:</strong>  Configuration for the training objective, determines the reward during training.</li>
+<li><strong>alignment_params:</strong>  Alignment method-specific hyperparameter configuration.</li>
+<li><strong>base_training_params:</strong>  Common training parameters.</li>
+<li><strong>job_name:</strong>  Human readable training job name.</li>
+<li><strong>output_model_name:</strong>  Name for resulting model.</li>
+<li><strong>wait:</strong>  If True, only returns when training is finished.</li>
+<li><strong>use_case:</strong>  Target use case to associate training job with.</li>
+<li><strong>compute_pool:</strong>  Compute pool where training job will run.</li>
 </ul>
 </div>
 
